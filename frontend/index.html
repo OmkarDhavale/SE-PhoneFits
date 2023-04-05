@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneFits</title>
+    <!-- <script src="/eel.js"></script> -->
+    <script src="app.js"></script>
+</head>
+hello world
+
+<body>
+    <div class="body">
+        <div class="appBody">
+            <div class=mobileImage>
+                <img src="./images/mobileEdge.png" width="300px" height="550px">
+            </div>
+    
+            <div class="requirenmentsBox">
+            <h3>Select your requirements <i class="fas fa-cogs"></i></h3>
+            <ul>
+                <li>
+                    RAM <i class="fas fa-memory"></i> :
+                    <select name="RAM" id="ram">
+                    <option value="1">1Gb</option>
+                    <option value="2">2Gb</option>
+                    <option value="3">3Gb</option>
+                    <option value="4">4Gb</option>
+                    <option value="6">6Gb</option>
+
+                    </select>
+                </li>
+                <li>
+                    ROM <i class="fas fa-container-storage"></i> :
+                    <select name="ROM" id="rom">
+                    <option value="16">16Gb</option>
+                    <option value="32">32Gb</option>
+                    <option value="64">64Gb</option>
+                    <option value="128">128Gb</option>
+                    <option value="256">256Gb</option>
+                    </select>
+                </li>
+                <li>
+                    Camera <i class="fas fa-camera"></i> :
+                    <select name="Camera" id="camera">
+                    <option value="5">5 MP</option>
+                    <option value="8">8 MP</option>
+                    <option value="12">12 MP</option>
+                    <option value="13">13 MP</option>
+                    <option value="16">16 MP</option>
+                    <option value="48">48 MP</option>
+                    <option value="64">64 MP</option>
+                    </select>
+                </li>
+                <li>
+                    Battery <i class="fas fa-battery-three-quarters"></i> :
+                    <select name="Battery" id="battery">
+                    <option value="2500">2500 MAh</option>
+                    <option value="3000">3000 MAh</option>
+                    <option value="3500">3500 MAh</option>
+                    <option value="4000">4000 MAh</option>
+                    <option value="4500">4500 MAh</option>
+                    <option value="5000">5000 MAh</option>
+                    <option value="6000">6000 MAh</option>
+                    </select>
+                </li>
+                <!-- <li>
+                    Processor <i class="fas fa-microchip"></i> :
+                    <select name="Processor" id="processor">
+                    <option value="Apple A13 Bionic">Apple A13 Bionic</option>
+                    <option value="Qualcomm Snapdragon 865 Plus">Qualcomm Snapdragon 865 Plus</option>
+                    <option value="Qualcomm Snapdragon 865">Qualcomm Snapdragon 865</option>
+                    <option value="HiSilicon Kirin 990">HiSilicon Kirin 990</option>
+                    <option value="Samsung Exynos 990">Samsung Exynos 990</option>
+                    <option value="Qualcomm Snapdragon 845">Qualcomm Snapdragon 845</option>
+                    <option value="Mediatek Helio G95">Mediatek Helio G95</option>
+                    <option value="Qualcomm Snapdragon 730">Qualcomm Snapdragon 730</option>
+                    <option value="MediaTek Helio P95">MediaTek Helio P95</option>
+                    </select>
+                </li> -->
+                <li>
+                    Size <i class="fas fa-mobile-alt"></i> :
+                    <select name="Size" id="size">
+                        <option value="4.5">4.5 inch</option>
+                        <option value="5.0">5.0 inch</option>
+                        <option value="5.5">5.5 inch</option>
+                        <option value="6.0">6.0 inch</option>
+                        <option value="6.5">6.5 inch</option>
+                        <option value="7.0">7.0 inch</option>
+                    </select>
+                </li>
+                    <li>
+                        Ratings:
+                        <select name="rating" id="rating">
+                            <option value="2.5">2.5</option>
+                            <option value="3.0">3.0</option>
+                            <option value="3.3">3.3</option>
+                            <option value="3.5">3.5</option>
+                            <option value="3.7">3.7</option>
+                            <option value="4.0">4.0</option>
+                            <option value="4.3">4.3</option>
+                            <option value="4.5">4.5</option>
+                            <option value="4.7">4.7</option>
+                            <option value="5.0">5.0</option>
+                        </select>
+                    </li>
+                    <li>
+                    Budget <i class="fas fa-rupee-sign"></i> :
+                    <input type="number" id="budget" min="3000" step="500">
+                </li>
+            </ul>
+            <div class="findBox">
+                    <button onclick="captureAndSend()">Find My Phone <i class="fas fa-search"></i></button>
+            </div>
+            
+         </div>
+            <div class="appHead">
+                <h1 class="heading">Mobile Recommendation System <i class="fas fa-mobile"></i></h1>
+                <div id="displayResult">
+                    <img src="./images/mobileGif.gif" alt="gif" width="300px" id="mobileGif">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
