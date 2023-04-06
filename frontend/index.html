@@ -5,7 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhoneFits</title>
-    <!-- <script src="/eel.js"></script> -->
+    <script src="/eel.js"></script>
+    <script>
+        //This is main js code
+        var captureAndSend=()=>{
+            var ram=document.getElementById('ram').value;
+            var rom=document.getElementById('rom').value;
+            var camera=document.getElementById('camera').value;
+            var battery=document.getElementById('battery').value;
+            // var processor=document.getElementById('processor').value;
+            var size=document.getElementById('size').value;
+            var rating=document.getElementById('rating').value;
+            var budget=document.getElementById('budget').value;
+           
+            var dict=new Object();
+            var dict={
+                ram:ram,
+                rom:rom,
+                camera:camera,
+                battery:battery,
+                // processor:processor,
+                size:size,
+                rating:rating,
+                budget:budget,
+            }
+            // alert('Selected'+" "+"Ram:"+ram+" "+"Rom:"+rom+" "+"Camera: "+camera+" "+"Battery: "+battery+" "+"Processor: "+processor+" "+" Size:"+size+" "+"Warranty"+warranty+" "+"Budget:"+budget)
+            //this function is accessible from py
+            eel.recieveDataToPython(dict)
+            var buildImg=document.getElementById('displayResult')
+            buildImg.classList.add('hideBuildImage')
+        }
+        eel.expose(recieveBackToJs);
+        function recieveBackToJs(pyToJs){
+
+
+            var dict={}
+            for (var key in pyToJs) {
+            console.log(key + " -> " +pyToJs[key]['ram']);
+            var displayResult=document.getElementById('displayResult');
+            var html='<div id="displayMsg"><h1>[Name]</h4><img src="[img]" alt="mobile" class="resultMobileImg"><h2>Price:[budget] RS</h2><h2>RAM:[ram] GB</h2><h2>ROM:[rom] GB</h2><h2>Camera:[camera] MP<h2><h2>Battery:[battery] MAh</h2><h2>Processor:[processor]</h2><h2>Size:[size] inch</h2><button>Buy Now</button></div>';
+            var newHtml=html.replace('[ram]',pyToJs[key]['ram']);
+            newHtml=newHtml.replace('[rom]',pyToJs[key]['rom']);
+            newHtml=newHtml.replace('[Name]',key);
+            newHtml=newHtml.replace('[camera]',pyToJs[key]['camera']);
+            newHtml=newHtml.replace('[battery]',pyToJs[key]['battery']);
+            newHtml=newHtml.replace('[processor]',pyToJs[key]['processor']);
+            newHtml=newHtml.replace('[size]',pyToJs[key]['size']);
+            newHtml=newHtml.replace('[img]',pyToJs[key]['image']);
+            newHtml=newHtml.replace('[budget]',pyToJs[key]['budget']);
+            // displayResult.innerHTML=newHtml;
+            var newElement=document.createElement('div')
+            newElement.innerHTML=newHtml
+            displayResult.insertAdjacentElement("afterend",newElement)
+            }
+
+
+            
+        };
+        
+        // eel.expose(jsToPy)
+    </script>
     <script src="app.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href="fa/css/all.css" rel="stylesheet">
