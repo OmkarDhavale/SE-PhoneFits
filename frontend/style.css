@@ -233,7 +233,7 @@ input {
 
 
 
-.appBody {
+.specspage {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -323,15 +323,6 @@ input {
     background: linear-gradient(to right, #96c93d, #00b09b);
 }
 
-.appFooter {
-    position: absolute;
-    top: 540px;
-    text-align: center;
-    margin: auto;
-    font-family: cursive;
-    left: 30px;
-}
-
 #displayMsg {
     font-family: cursive;
     text-align: left;
@@ -391,9 +382,26 @@ input {
 }
 
 .appFooter {
+    /* border: 10px solid red; */
     margin: 0;
     bottom: 0;
-    border: 10px solid red;
     display: block;
     width: 100vw;
+    font-family: cursive;
+    text-align: center;
+    padding: 50px;
+    
+    background-image: url(images/spaceBG.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.appFooter>p>a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.appFooter>p>a:hover{
+    text-decoration: underline;
+    color: var(--theme-logo);
 }
