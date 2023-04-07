@@ -13,9 +13,13 @@
     transition: all .5s ease;
     font-family: 'Alkatra', cursive;
     scroll-behavior: smooth;
+
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
 }
 
-.logo{
+.logo {
     color: var(--theme-logo);
 }
 
@@ -48,7 +52,7 @@ body>div {
     background-attachment: fixed;
     background-size: cover;
     box-shadow: 0px 10px 10px rgba(1, 0, 27, 0.458);
-    
+
 }
 
 /* img {
@@ -68,6 +72,7 @@ body>div {
 #landingpage>:nth-child(1) {
     font-size: 4em;
 }
+
 #landingpage>:nth-child(2) {
     font-size: 1.5em;
 }
@@ -76,17 +81,22 @@ body>div {
     text-decoration: none;
     font-family: cursive;
     font-size: 1em;
-    border: 2px solid whitesmoke;
+    font-weight: bold;
+    border: 2px solid var(--theme-logo);
     border-radius: 5px;
     padding: 5px 25px;
     max-width: fit-content;
-    color: whitesmoke;
+    color: var(--theme-logo);
     background-color: transparent;
 }
 
 #btn:hover {
     color: var(--theme-pri);
-    background-color: whitesmoke;
+    background-color: var(--theme-logo);
+}
+
+input {
+    margin: 0px 5px;
 }
 
 #quizpage {
@@ -98,28 +108,69 @@ body>div {
     justify-content: start;
     align-items: center;
     font-family: 'Alkatra', cursive;
+    /* background-image: url(./images/spaceBG.jpg);
+    background-attachment: fixed;
+    background-size: cover; */
 }
+
 #quizpage>* {
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
-#quizhead{
+
+#quizhead {
     font-family: 'Alkatra', cursive;
     font-size: 2em;
     margin: 10px 20px;
 }
-#questions{
-    margin: 10px 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-.quecard{
-    border: 2px solid red;
-    margin: 20px 40px;
-    max-width: 30%;
-    max-height: 40%;
 
+#questions {
+    margin: 10px 20px;
+    min-height: 40vh;
+    max-height: 70vh;
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: scroll;
+    overflow-x: auto;
+    overflow-y: auto;
+    /* background-color: rgba(245, 245, 245, 0.5); */
+    box-shadow: 0px 0px 50px rgba(8, 0, 255, 0.814);
+}
+
+.slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+    background: var(--theme-logo);
+    border-radius: 10px;
+}
+
+.slides::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.quecard {
+    margin: 20px 40px;
+    min-width: 30%;
+    max-height: 40%;
+    border: 2px solid var(--theme-pri);
+    border-radius: 10px;
+    padding: 20px 40px;
+
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(218, 207, 255, 1));
+    color: var(--theme-pri);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 
@@ -132,7 +183,7 @@ body>div {
     position: fixed;
     left: 0;
     top: 0;
-    min-width: 90vw;
+    min-width: 100vw;
     z-index: 10;
 
     /* background-color: rgba(28, 59, 235, 0.559); */

@@ -90,4 +90,4 @@ def recieveDataToPython(jsToPy):
 
     eel.recieveBackToJs(pyToJs) 
 eel.init("frontend")
-eel.start('index.html',size=(1000,700),port=8090)
+eel.start('index.html',size=(1920,1080),port=8090)
