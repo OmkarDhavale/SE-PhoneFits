@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@600&family=Lobster&display=swap');
 
 :root {
+    --theme-logo: rgb(0, 255, 255);
     --theme-pri: rgb(39, 0, 144);
     /* --theme-sec: red;
     --theme-ter: blue; */
@@ -12,6 +13,10 @@
     transition: all .5s ease;
     font-family: 'Alkatra', cursive;
     scroll-behavior: smooth;
+}
+
+.logo{
+    color: var(--theme-logo);
 }
 
 body {
@@ -31,7 +36,7 @@ body>div {
 
 #landingpage {
     /* border: 2px solid red; */
-    padding-left: 10%;
+    padding-left: 8%;
     min-width: 100vw;
     min-height: 100vh;
     display: flex;
@@ -40,7 +45,10 @@ body>div {
     align-items: left;
     /* animation: BGlandingpage 1s steps(1, end) 1; */
     background-image: url(./images/landingpagePNG.png);
+    background-attachment: fixed;
     background-size: cover;
+    box-shadow: 0px 10px 10px rgba(1, 0, 27, 0.458);
+    
 }
 
 /* img {
@@ -57,8 +65,11 @@ body>div {
     }
 } */
 
-#landingpage>span {
+#landingpage>:nth-child(1) {
     font-size: 4em;
+}
+#landingpage>:nth-child(2) {
+    font-size: 1.5em;
 }
 
 #btn {
@@ -70,7 +81,7 @@ body>div {
     padding: 5px 25px;
     max-width: fit-content;
     color: whitesmoke;
-    background-color: var(--theme-pri);
+    background-color: transparent;
 }
 
 #btn:hover {
@@ -79,12 +90,38 @@ body>div {
 }
 
 #quizpage {
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    padding: 5% 10%;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
+    font-family: 'Alkatra', cursive;
 }
+#quizpage>* {
+    border: 2px solid red;
+}
+#quizhead{
+    font-family: 'Alkatra', cursive;
+    font-size: 2em;
+    margin: 10px 20px;
+}
+#questions{
+    margin: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.quecard{
+    border: 2px solid red;
+    margin: 20px 40px;
+    max-width: 30%;
+    max-height: 40%;
+
+}
+
 
 .appHead {
     display: flex;
@@ -98,9 +135,11 @@ body>div {
     min-width: 90vw;
     z-index: 10;
 
-    background-color: rgba(28, 59, 235, 0.559);
+    /* background-color: rgba(28, 59, 235, 0.559); */
+    background-image: linear-gradient(180deg, rgba(39, 0, 144, 0.5), rgba(27, 0, 115, 0.5));
+    ;
     border: 2px outset rgba(255, 255, 255, .1);
-    box-shadow: 0px 10px 10px rgba(10, 5, 157, 0.458);
+    box-shadow: 0px 10px 10px rgba(3, 0, 95, 0.458);
     backdrop-filter: blur(2px);
 }
 
