@@ -51,7 +51,7 @@ body>div {
     background-image: url(./images/landingpagePNG.png);
     background-attachment: fixed;
     background-size: cover;
-    box-shadow: 0px 10px 10px rgba(1, 0, 27, 0.458);
+    box-shadow: 0px 10px 20px rgba(1, 0, 27, 1);
 
 }
 
@@ -79,7 +79,8 @@ body>div {
 
 #btn {
     text-decoration: none;
-    font-family: cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: .05rem;
     font-size: 1em;
     font-weight: bold;
     border: 2px solid var(--theme-logo);
@@ -108,9 +109,9 @@ input {
     justify-content: start;
     align-items: center;
     font-family: 'Alkatra', cursive;
-    /* background-image: url(./images/spaceBG.jpg);
+    background-image: url(./images/quizpageDim.png);
     background-attachment: fixed;
-    background-size: cover; */
+    background-size: cover;
 }
 
 #quizpage>* {
@@ -125,9 +126,8 @@ input {
 
 #questions {
     margin: 10px 20px;
-    min-height: 40vh;
     max-height: 70vh;
-    min-width: 600px;
+    min-width: 80vw;
     display: flex;
     flex-direction: column;
     flex-wrap: no-wrap;
@@ -164,13 +164,25 @@ input {
 
     background-image: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(218, 207, 255, 1));
     color: var(--theme-pri);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 1); */
+}
+.quecard:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px black;
 }
 
-.options {
+.quecard>* {
+    letter-spacing: .05rem;
+    word-spacing: .1rem;
+    line-height: 2rem;
+}
+
+.options,
+.answer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    color: black;
 }
 
 
@@ -378,9 +390,15 @@ input {
 }
 
 .classdisplayResult {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+#displayResult>p{
+    font-size: 2rem;
+    border: 2px solid red;
+}
 .appFooter {
     /* border: 10px solid red; */
     margin: 0;
@@ -390,18 +408,19 @@ input {
     font-family: cursive;
     text-align: center;
     padding: 50px;
-    
+
     background-image: url(images/spaceBG.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
 
-.appFooter>p>a{
+.appFooter>p>a {
     text-decoration: none;
     color: whitesmoke;
 }
-.appFooter>p>a:hover{
+
+.appFooter>p>a:hover {
     text-decoration: underline;
     color: var(--theme-logo);
 }

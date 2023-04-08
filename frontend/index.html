@@ -36,6 +36,7 @@
             eel.recieveDataToPython(dict)
             var buildImg = document.getElementById('displayResult')
             buildImg.classList.add('hideBuildImage')
+            buildImg.classList.add('letscheck')
         }
         eel.expose(recieveBackToJs);
         function recieveBackToJs(pyToJs) {
@@ -57,6 +58,7 @@
                 newHtml = newHtml.replace('[budget]', pyToJs[key]['budget']);
                 // displayResult.innerHTML=newHtml;
                 var newElement = document.createElement('div')
+                newElement.className = "resultphones"
                 newElement.innerHTML = newHtml
                 displayResult.insertAdjacentElement("afterend", newElement)
             }
@@ -83,7 +85,7 @@
                 <ul>
                     <li><a href="#landingpage">Home</a></li>
                     <li><a href="#quizpage">Quiz</a></li>
-                    <li><a href="#">Notification</a></li>
+                    <li><a href="#specspage">Check Phones</a></li>
                     <li><a href="#about">About</a></li>
                 </ul>
             </div>
@@ -99,61 +101,83 @@
             <div id="quizhead">Quiz Page</div>
             <div id="questions" class="slides">
                 <div id="que1" class="quecard">
-                    <div class="que">Q. Due you use Battery heavily?</div>
+                    <div class="que">Q. Main stuff you will be doing on your smartphone.</div>
                     <div class="options">
-                        <span class="option"><input type="radio" name="" id=""><span>No</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>Moderately</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>Yes</span></span>
+                        <span class="option"><input type="radio" name="" id=""><span>Nothing much, just for common use
+                                like calling, messaging, etc</span></span>
+                        <span class="option"><input type="radio" name="" id=""><span>Gaming</span></span>
+                        <span class="option"><input type="radio" name="" id=""><span>Clicking Photos or/and Content
+                                creation</span></span>
+                        <span class="option"><input type="radio" name="" id=""><span>Online meetings</span></span>
+                        <span class="option"><input type="radio" name="" id=""><span>For entertainment like Youtube,
+                                Netflix, ZEE5, Amazon Prime, etc</span></span>
+                        <span class="option"><input type="radio" name="" id=""><span>For study stuff</span></span>
+                        <span class="option"><input type="radio" name="" id=""><span>Just what the average people
+                                do</span></span>
                     </div>
                 </div>
                 <div id="que2" class="quecard">
-                    <div class="que">Q. Due you use Battery heavily?</div>
+                    <div class="que">Q. Do you often click photos on your phone?</div>
                     <div class="options">
-                        <span class="option"><input type="radio" name="" id=""><span>No</span></span>
                         <span class="option"><input type="radio" name="" id=""><span>Moderately</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>Yes</span></span>
+                        <span class="option"><input type="radio" name="" id=""><span>No</span></span>
+                        <span class="option"><input type="radio" name="" id=""><span>Yes, very often</span></span>
                     </div>
                 </div>
                 <div id="que3" class="quecard">
-                    <div class="que">Q. Due you use Battery heavily?</div>
+                    <div class="que">Q. Most relevant games from below you play often.</div>
                     <div class="options">
-                        <span class="option"><input type="radio" name="" id=""><span>No</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>Moderately</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>Yes</span></span>
+                        <span class="option"><input type="radio" name="" id=""><span>High End action Games like PUBG,
+                                COD, Fortnite, etc</span></span>
+                        <span class="option"><input type="radio" name="" id=""><span>Candy Crush, Clash of Clans, Angry
+                                Birds, etc</span></span>
+                        <span class="option"><input type="radio" name="" id=""><span>Minimal games like Sudoku, 2048,
+                                Chess, etc</span></span>
+                        <span class="option"><input type="radio" name="" id=""><span>I don’t play games on
+                                phone</span></span>
                     </div>
                 </div>
                 <div id="que4" class="quecard">
-                    <div class="que">Q. Due you use Battery heavily?</div>
+                    <div class="que">Q. Do you often use your phone for online meetings/video conferencing?</div>
                     <div class="options">
-                        <span class="option"><input type="radio" name="" id=""><span>No</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>Moderately</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>Yes</span></span>
+                        <span class="option"><input type="radio" name="" id=""><span>No, rarely</span></span>
+                        <span class="option"><input type="radio" name="" id=""><span>Sometimes</span></span>
+                        <span class="option"><input type="radio" name="" id=""><span>Yes, often</span></span>
                     </div>
                 </div>
                 <div id="que5" class="quecard">
-                    <div class="que">Q. Due you use Battery heavily?</div>
-                    <div class="options">
-                        <span class="option"><input type="radio" name="" id=""><span>No</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>Moderately</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>Yes</span></span>
+                    <div class="que">Q. How many apps among the following do you use <u>most often</u>?<br>Facebook <br>
+                        Instagram
+                        <br> FB Messenger <br> YouTube <br> Google Chrome <br> Amazon Kindle <br> Sp Mode Mail <br>
+                        Google Maps <br> Skype <br> Tango
+                    </div>
+                    <div class="options" style="text-align: center;">
+                        <span class="option">Enter number in the range of 1-10 : <input type="number" name="" id=""
+                                min="0" max="10" value="0"><span></span></span>
                     </div>
                 </div>
                 <div id="que6" class="quecard">
-                    <div class="que">Q. Due you use Battery heavily?</div>
+                    <div class="que">Q. What is your age?</div>
+                    <div class="options" style="text-align: center;">
+                        <span class="option">Enter your age : <input type="number" name="" id="" min="1" max="100"
+                                value="20"><span></span></span>
+                    </div>
+                </div>
+                <div id="que7" class="quecard">
+                    <div class="que">Q. Would you use your phone to Edit photos and Videos?</div>
                     <div class="options">
                         <span class="option"><input type="radio" name="" id=""><span>No</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>Moderately</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>Yes</span></span>
+                        <span class="option"><input type="radio" name="" id=""><span>Sometimes, May be</span></span>
+                        <span class="option"><input type="radio" name="" id=""><span>Yes, often</span></span>
                     </div>
-                
                 </div>
                 <div id="quizsubmit" style="margin: 20px;">
-                    <a href="#" id="btn" style="margin: 20px;">Submit</a>
+                    <a href="#" id="btn" style="margin: 20px; background-color: aqua; color: black;">Submit</a>
                 </div>
             </div>
         </div>
 
-        <div class="specspage">
+        <div class="specspage" id="specspage">
             <div class="reqiurementsBox">
                 <!-- <h3><i class="fas fa-cogs"></i>Select your requirements</h3> -->
                 <h2>Select your requirements</h2>
@@ -243,18 +267,23 @@
 
 
                 <div class="findBox">
-                    <button onclick="captureAndSend()">Find My Phone <i class="fas fa-search"></i></button>
+                    <button onclick="captureAndSend()"><a href="#displayResult">Find My Phone</a><i
+                            class="fas fa-search"></i></button>
                 </div>
 
             </div>
         </div>
         <div class="classdisplayResult" id="displayResult">
-            <img src="./images/mobileGif.gif" alt="gif" width="300px" id="mobileGif">
+            <!-- <img src="./images/mobileGif.gif" alt="gif" width="300px" id="mobileGif"> -->
+            <p class="letscheck">Let's Check which smartphones matches you.</p>
+            <img src="./images/girlsearching.webp" alt="">
         </div>
 
         <div id="about" class="appFooter">
             <h2 style="color: aqua;">&copy;PhoneFits</h2>
-            <p>Project for Software Engineering made by <br><a href="https://www.linkedin.com/in/geet-salame-57a6a71b6/" target="_blank">111903032 &nbsp; Geet Salame</a> <br> <a href="#">112003028 &nbsp; Subodh Choudhari</a> <br> <a href="#">112003035 &nbsp; Omkar Dhawale</a> </p>
+            <p>Project for Software Engineering made by <br><a href="https://www.linkedin.com/in/geet-salame-57a6a71b6/"
+                    target="_blank">111903032 &nbsp; Geet Salame</a> <br> <a href="#">112003028 &nbsp; Subodh
+                    Choudhari</a> <br> <a href="#">112003035 &nbsp; Omkar Dhawale</a> </p>
         </div>
     </div>
 
