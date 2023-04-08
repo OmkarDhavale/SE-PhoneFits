@@ -36,7 +36,6 @@
             eel.recieveDataToPython(dict)
             var buildImg = document.getElementById('displayResult')
             buildImg.classList.add('hideBuildImage')
-            buildImg.classList.add('letscheck')
         }
         eel.expose(recieveBackToJs);
         function recieveBackToJs(pyToJs) {
@@ -94,7 +93,7 @@
         <div id="landingpage">
             <span>Welcome to <span class="logo">Phone<span class="fits">Fits</span></span></span>
             <span style="margin-top: -28px;">A Personality based Smartphone Recommendation Platform</span>
-            <a href="#quizpage" id="btn" style="margin-top: 10px;">Take Quiz</a>
+            <a href="#quizpage" class="btn" style="margin-top: 10px;">Take Quiz</a>
         </div>
 
         <div id="quizpage">
@@ -103,46 +102,47 @@
                 <div id="que1" class="quecard">
                     <div class="que">Q. Main stuff you will be doing on your smartphone.</div>
                     <div class="options">
-                        <span class="option"><input type="radio" name="" id=""><span>Nothing much, just for common use
+                        <span class="option"><input type="radio" name="q1" id=""><span>Nothing much, just for common use
                                 like calling, messaging, etc</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>Gaming</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>Clicking Photos or/and Content
+                        <span class="option"><input type="radio" name="q1" id=""><span>Gaming</span></span>
+                        <span class="option"><input type="radio" name="q1" id=""><span>Clicking Photos or/and Content
                                 creation</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>Online meetings</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>For entertainment like Youtube,
+                        <span class="option"><input type="radio" name="q1" id=""><span>Online meetings</span></span>
+                        <span class="option"><input type="radio" name="q1" id=""><span>For entertainment like Youtube,
                                 Netflix, ZEE5, Amazon Prime, etc</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>For study stuff</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>Just what the average people
+                        <span class="option"><input type="radio" name="q1" id=""><span>For study stuff</span></span>
+                        <span class="option"><input type="radio" name="q1" id=""><span>Just what the average people
                                 do</span></span>
                     </div>
                 </div>
                 <div id="que2" class="quecard">
                     <div class="que">Q. Do you often click photos on your phone?</div>
-                    <div class="options">
-                        <span class="option"><input type="radio" name="" id=""><span>Moderately</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>No</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>Yes, very often</span></span>
-                    </div>
+                    <select name="q2" id="camera" required>
+                        <option value="15">Moderately</option>
+                        <option value="30">No</option>
+                        <option value="64">Yes, very often</option>
+                    </select>
                 </div>
                 <div id="que3" class="quecard">
                     <div class="que">Q. Most relevant games from below you play often.</div>
                     <div class="options">
-                        <span class="option"><input type="radio" name="" id=""><span>High End action Games like PUBG,
+                        <span class="option"><input type="radio" name="q3" id=""><span>High End action Games like PUBG,
                                 COD, Fortnite, etc</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>Candy Crush, Clash of Clans, Angry
+                        <span class="option"><input type="radio" name="q3" id=""><span>Candy Crush, Clash of Clans,
+                                Angry
                                 Birds, etc</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>Minimal games like Sudoku, 2048,
+                        <span class="option"><input type="radio" name="q3" id=""><span>Minimal games like Sudoku, 2048,
                                 Chess, etc</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>I don’t play games on
+                        <span class="option"><input type="radio" name="q3" id=""><span>I don’t play games on
                                 phone</span></span>
                     </div>
                 </div>
                 <div id="que4" class="quecard">
                     <div class="que">Q. Do you often use your phone for online meetings/video conferencing?</div>
                     <div class="options">
-                        <span class="option"><input type="radio" name="" id=""><span>No, rarely</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>Sometimes</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>Yes, often</span></span>
+                        <span class="option"><input type="radio" name="q4" id=""><span>No, rarely</span></span>
+                        <span class="option"><input type="radio" name="q4" id=""><span>Sometimes</span></span>
+                        <span class="option"><input type="radio" name="q4" id=""><span>Yes, often</span></span>
                     </div>
                 </div>
                 <div id="que5" class="quecard">
@@ -152,34 +152,107 @@
                         Google Maps <br> Skype <br> Tango
                     </div>
                     <div class="options" style="text-align: center;">
-                        <span class="option">Enter number in the range of 1-10 : <input type="number" name="" id=""
-                                min="0" max="10" value="0"><span></span></span>
+                        <span class="option">Enter number in the range of 1-10 : <select name="q5" id="rom" required>
+                                <option value="16">1</option>
+                                <option value="32">2</option>
+                                <option value="32">3</option>
+                                <option value="64">4</option>
+                                <option value="64">5</option>
+                                <option value="128">6</option>
+                                <option value="128">7</option>
+                                <option value="256">8</option>
+                                <option value="256">9</option>
+                                <option value="256">10</option>
+                            </select> </span>
                     </div>
                 </div>
                 <div id="que6" class="quecard">
                     <div class="que">Q. What is your age?</div>
                     <div class="options" style="text-align: center;">
-                        <span class="option">Enter your age : <input type="number" name="" id="" min="1" max="100"
+                        <span class="option">Enter your age : <input type="number" name="q6" id="" min="1" max="100"
                                 value="20"><span></span></span>
                     </div>
                 </div>
                 <div id="que7" class="quecard">
                     <div class="que">Q. Would you use your phone to Edit photos and Videos?</div>
                     <div class="options">
-                        <span class="option"><input type="radio" name="" id=""><span>No</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>Sometimes, May be</span></span>
-                        <span class="option"><input type="radio" name="" id=""><span>Yes, often</span></span>
+                        <span class="option"><input type="radio" name="q7" id=""><span>No</span></span>
+                        <span class="option"><input type="radio" name="q7" id=""><span>Sometimes, May be</span></span>
+                        <span class="option"><input type="radio" name="q7" id=""><span>Yes, often</span></span>
                     </div>
                 </div>
-                <div id="quizsubmit" style="margin: 20px;">
-                    <a href="#" id="btn" style="margin: 20px; background-color: aqua; color: black;">Submit</a>
+                <div id="que8" class="quecard">
+                    <div class="que">Q. Do you often do Multitasking on your phone? <br> OR <br> Many important apps
+                        stay opened on your phone at the same time?</div>
+                    <div class="options">
+                        <select name="q8" id="ram" required>
+                            <option value="4">Moderately</option>
+                            <option value="2">No</option>
+                            <option value="6">Yes, very often</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="que9" class="quecard">
+                    <div class="que">Q. How long do you use phone on average?</div>
+                    <div class="options">
+                        <select name="q9" id="battery" required>
+                            <option value="3000">Not much</option>
+                            <option value="4000">Moderately</option>
+                            <option value="5000">Mostly</option>
+                            <option value="6000">All day</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="que10" class="quecard">
+                    <div class="que">Q. Tell us about your preference about Display size?</div>
+                    <div class="options">
+                        <select name="q10" id="size" required>
+                            <option value="4.5">Small</option>
+                            <option value="5.0">Enough to get in only one hand</option>
+                            <option value="5.5">Average</option>
+                            <option value="6.5">Big enough to watch movies, play games, etc</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="que11" class="quecard">
+                    <div class="que">Q. What is your Budget?</div>
+                    <div class="options">
+                        <input type="number" id="budget" min="2000" step="500" value="10000">
+                    </div>
+                </div>
+                <div id="que12" class="quecard">
+                    <div class="que">Q. Ratings </div>
+                    <div class="options">
+                        <select name="q12" id="rating">
+                            <option value="2.5">2.5</option>
+                            <option value="3.0">3.0</option>
+                            <option value="3.3">3.3</option>
+                            <option value="3.5">3.5</option>
+                            <option value="3.7">3.7</option>
+                            <option value="4.0" selected>4.0</option>
+                            <option value="4.3">4.3</option>
+                            <option value="4.5">4.5</option>
+                            <option value="4.7">4.7</option>
+                            <option value="5.0">5.0</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="" id="letscheck">
+                    <img style="-webkit-box-reflect:below -169px linear-gradient(transparent, transparent, rgba(255, 255, 255, 0.3));"
+                    src="./images/girlsearching.webp" alt="">
+                    <div>
+                        <p>Let's Check which smartphones matches you &#129321;</p>
+                        <button id="quizsubmit" class="btn" onclick="captureAndSend()"
+                        style="margin: 20px; background-color: aqua; color: black;"><i class="fas fa-search"></i><a
+                        href="#displayResult">&nbsp;Find My Phone Match</a></button>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="specspage" id="specspage">
+        <!-- <div class="specspage" id="specspage">
             <div class="reqiurementsBox">
-                <!-- <h3><i class="fas fa-cogs"></i>Select your requirements</h3> -->
                 <h2>Select your requirements</h2>
                 <ul>
                     <li> <span>RAM</span> <i class="fas fa-memory"></i> :
@@ -223,20 +296,6 @@
                             <option value="6000">6000 MAh</option>
                         </select>
                     </li>
-                    <!-- <li>
-                    Processor <i class="fas fa-microchip"></i> :
-                    <select name="Processor" id="processor">
-                    <option value="Apple A13 Bionic">Apple A13 Bionic</option>
-                    <option value="Qualcomm Snapdragon 865 Plus">Qualcomm Snapdragon 865 Plus</option>
-                    <option value="Qualcomm Snapdragon 865">Qualcomm Snapdragon 865</option>
-                    <option value="HiSilicon Kirin 990">HiSilicon Kirin 990</option>
-                    <option value="Samsung Exynos 990">Samsung Exynos 990</option>
-                    <option value="Qualcomm Snapdragon 845">Qualcomm Snapdragon 845</option>
-                    <option value="Mediatek Helio G95">Mediatek Helio G95</option>
-                    <option value="Qualcomm Snapdragon 730">Qualcomm Snapdragon 730</option>
-                    <option value="MediaTek Helio P95">MediaTek Helio P95</option>
-                    </select>
-                </li> -->
                     <li><span>Size</span><i class="fas fa-mobile-alt"></i> :
                         <select name="Size" id="size">
                             <option value="4.5">4.5 inch</option>
@@ -272,11 +331,12 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
         <div class="classdisplayResult" id="displayResult">
             <!-- <img src="./images/mobileGif.gif" alt="gif" width="300px" id="mobileGif"> -->
-            <p class="letscheck">Let's Check which smartphones matches you.</p>
-            <img src="./images/girlsearching.webp" alt="">
+            <!-- <p class="letscheck">Let's Check which smartphones matches you.</p>
+            <img style="-webkit-box-reflect:below -169px linear-gradient(transparent, transparent, rgba(255, 255, 255, 0.3));"
+                src="./images/girlsearching.webp" alt=""> -->
         </div>
 
         <div id="about" class="appFooter">
