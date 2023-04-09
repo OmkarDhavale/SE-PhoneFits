@@ -9,8 +9,248 @@
     <link rel="icon" type="image/x-icon" href="./images/PhoneFits.png">
     <script src="/eel.js"></script>
     <script>
+
+        var personalityObj = new Object();
+        var personalityObj = {
+            minimal: 0,
+            consumer: 0,
+            official: 0,
+            student: 0,
+            average: 0,
+            camera: 0,
+            gamer: 0,
+        }
+
+        var makePValuesNull = () => {
+            personalityObj.minimal = 0;
+            personalityObj.consumer = 0;
+            personalityObj.official = 0;
+            personalityObj.student = 0;
+            personalityObj.average = 0;
+            personalityObj.camera = 0;
+            personalityObj.gamer = 0;
+        }
+
+        var reloadPage = () => {
+            makePValuesNull();
+            location.reload();
+        }
+
+        var handleQ1 = () => {
+            var personality = document.getElementById('personality').value;
+            if (personality === "Minimal User") { personalityObj.minimal++; }
+            else if (personality === "Gamer Person") { personalityObj.gamer++; }
+            else if (personality === "Camera Person") { personalityObj.camera++; }
+            else if (personality === "Official Person") { personalityObj.official++; }
+            else if (personality === "Content Consumer Personality") { personalityObj.consumer++; }
+            else if (personality === "Student Personality") { personalityObj.student++; }
+            else if (personality === "Average User") { personalityObj.average++; }
+        }
+        var handleQ2 = () => {
+            var personality = document.getElementById('camera').value;
+            if (personality === "64") {
+                personalityObj.camera++;
+            }
+            else if (personality === "30") {
+                personalityObj.average++;
+                personalityObj.official++;
+                personalityObj.student++;
+            }
+            else if (personality === "15") {
+                personalityObj.minimal++;
+                personalityObj.consumer++;
+                personalityObj.gamer++;
+            }
+        }
+        var handleQ3 = () => {
+            var personality = document.getElementById('game').value;
+            if (personality === "3") { personalityObj.gamer++; }
+            else if (personality === "2") {
+                personalityObj.average++;
+            }
+            else if (personality === "1") {
+                personalityObj.official++;
+                personalityObj.student++;
+                personalityObj.camera++;
+                personalityObj.consumer++;
+            }
+            else if (personality === "0") {
+                personalityObj.minimal++;
+            }
+        }
+        var handleQ4 = () => {
+            var personality = document.getElementById('meet').value;
+            if (personality === "3") {
+                personalityObj.official++;
+                personalityObj.camera++;
+            }
+            else if (personality === "2") {
+                personalityObj.average++;
+                personalityObj.student++;
+            }
+            else if (personality === "1") {
+                personalityObj.consumer++;
+                personalityObj.minimal++;
+            }
+        }
+        var handleQ5 = () => {
+            var personality = document.getElementById('rom').value;
+            if (personality === "16") {
+                personalityObj.minimal++;
+            }
+            else if (personality === "32") {
+                personalityObj.student++;
+                personalityObj.official++;
+            }
+            else if (personality === "64") {
+                personalityObj.average++;
+                personalityObj.consumer++;
+            }
+            else if (personality === "128") {
+                personalityObj.camera++;
+                personalityObj.gamer++;
+            }
+        }
+        var handleQ6 = () => {
+            var personality = document.getElementById('age').value;
+            if (personality >= "45") {
+                personalityObj.minimal++;
+                personalityObj.consumer++;
+            }
+            else if (personality >= "30") {
+                personalityObj.official++;
+                personalityObj.average++;
+            }
+            else if (personality > "20") {
+                personalityObj.student++;
+                personalityObj.average++;
+                personalityObj.consumer++;
+                personalityObj.gamer++;
+                personalityObj.camera++;
+            }
+            else if (personality > "15") {
+                personalityObj.gamer++;
+            }
+        }
+        var handleQ7 = () => {
+            var personality = document.getElementById('editor').value;
+            if (personality === "1") {
+                personalityObj.minimal++;
+                personalityObj.consumer++;
+            }
+            else if (personality === "2") {
+                personalityObj.official++;
+                personalityObj.student++;
+                personalityObj.average++;
+                personalityObj.gamer++;
+            }
+            else if (personality === "3") {
+                personalityObj.camera++;
+            }
+        }
+        var handleQ8 = () => {
+            var personality = document.getElementById('ram').value;
+            if (personality === "2") {
+                personalityObj.minimal++;
+            }
+            else if (personality === "4") {
+                personalityObj.average++;
+            }
+            else if (personality === "6") {
+                personalityObj.camera++;
+                personalityObj.gamer++;
+            }
+            else if (personality === "8") {
+                personalityObj.official++;
+                personalityObj.student++;
+                personalityObj.consumer++;
+            }
+        }
+        var handleQ9 = () => {
+            var personality = document.getElementById('battery').value;
+            if (personality === "3000") {
+                personalityObj.minimal++;
+            }
+            else if (personality === "4000") {
+                personalityObj.average++;
+            }
+            else if (personality === "5000") {
+                personalityObj.official++;
+                personalityObj.student++;
+            }
+            else if (personality === "6000") {
+
+                personalityObj.camera++;
+                personalityObj.gamer++;
+                personalityObj.consumer++;
+            }
+        }
+        var handleQ10 = () => {
+            var personality = document.getElementById('size').value;
+            if (personality === "4.5") {
+                personalityObj.minimal++;
+            }
+            else if (personality === "5.0") {
+                personalityObj.average++;
+            }
+            else if (personality === "5.5") {
+                personalityObj.official++;
+                personalityObj.student++;
+                personalityObj.camera++;
+                personalityObj.gamer++;
+            }
+            else if (personality === "6.5") {
+
+                personalityObj.camera++;
+                personalityObj.gamer++;
+                personalityObj.consumer++;
+            }
+        }
+        var handleQ11 = () => {
+            var personality = document.getElementById('budget').value;
+            if (personality > 9000000) {
+                alert(`Budget Rs.${personality} : Sir aapke liye itna mehenga phone kaha se laau!!`);
+            }
+            else if (personality >= 2000000 && personality < 9000000) {
+                alert(`Budget Rs.${personality} : Paisa chhapne ka dhanda krte ho kya??`);
+            }
+            else if (personality >= 1000000 && personality < 2000000) {
+                alert(`Budget ${personality} : Nice to meet you Ambani chya pora`);
+            }
+            else if (personality >= 200000 && personality < 1000000) {
+                alert(`Budget Rs.${personality} : Aapke pas tel ki khane hai kya??`);
+            }
+            else if (personality >= 100000 && personality < 200000) {
+                alert(`Budget Rs.${personality} : Bohot paisa hai lagta tere paas`);
+            }
+            else if (personality >= 50000 && personality < 100000) {
+                alert(`Budget Rs.${personality} : Hmm Let's look worthy phones for you`);
+            }
+            else if (personality >= 30000 && personality < 50000) {
+                alert(`Budget Rs.${personality} : To start kre?`);
+            }
+            else if (personality >= 10000 && personality < 30000) {
+                alert(`Budget Rs.${personality} : Hmm average people goes with this budget`);
+            }
+            else if (personality < 10000) {
+                alert(`Budget Rs.${personality} : Chlo dekhte hai saste me mast phone aapke liye`);
+            }
+        }
         //This is main js code
         var captureAndSend = () => {
+            makePValuesNull();
+            handleQ11();
+            handleQ1();
+            handleQ2();
+            handleQ3();
+            handleQ4();
+            handleQ5();
+            handleQ6();
+            handleQ7();
+            handleQ8();
+            handleQ9();
+            handleQ10();
+            console.log("Personality calculated : ", personalityObj);
             var ram = document.getElementById('ram').value;
             var rom = document.getElementById('rom').value;
             var camera = document.getElementById('camera').value;
@@ -36,6 +276,8 @@
             eel.recieveDataToPython(dict)
             var buildImg = document.getElementById('displayResult')
             buildImg.classList.add('hideBuildImage')
+
+            console.log(personalityObj)
         }
         eel.expose(recieveBackToJs);
         function recieveBackToJs(pyToJs) {
@@ -102,48 +344,50 @@
                 <div id="que1" class="quecard">
                     <div class="que">Q. Main stuff you will be doing on your smartphone.</div>
                     <div class="options">
-                        <span class="option"><input type="radio" name="q1" id=""><span>Nothing much, just for common use
-                                like calling, messaging, etc</span></span>
-                        <span class="option"><input type="radio" name="q1" id=""><span>Gaming</span></span>
-                        <span class="option"><input type="radio" name="q1" id=""><span>Clicking Photos or/and Content
-                                creation</span></span>
-                        <span class="option"><input type="radio" name="q1" id=""><span>Online meetings</span></span>
-                        <span class="option"><input type="radio" name="q1" id=""><span>For entertainment like Youtube,
-                                Netflix, ZEE5, Amazon Prime, etc</span></span>
-                        <span class="option"><input type="radio" name="q1" id=""><span>For study stuff</span></span>
-                        <span class="option"><input type="radio" name="q1" id=""><span>Just what the average people
-                                do</span></span>
+                        <select name="q1" id="personality" required>
+                            <option value="Minimal User">Nothing much, just for common use
+                                like calling, messaging, etc</option>
+                            <option value="Gamer Person">Gaming</option>
+                            <option value="Camera Person">Clicking Photos or/and Content
+                                creation</option>
+                            <option value="Official Person">Online meetings</option>
+                            <option value="Content Consumer Personality">For entertainment like Youtube,
+                                Netflix, ZEE5, Amazon Prime, etc</option>
+                            <option value="Student Personality">For study stuff</option>
+                            <option value="Average User" selected>Just what an average people
+                                does</option>
+                        </select>
                     </div>
                 </div>
                 <div id="que2" class="quecard">
                     <div class="que">Q. Do you often click photos on your phone?</div>
                     <select name="q2" id="camera" required>
-                        <option value="15">Moderately</option>
-                        <option value="30">No</option>
-                        <option value="64">Yes, very often</option>
+                        <option value="30">Moderately</option>
+                        <option value="15">No</option>
+                        <option value='64'>Yes, very often</option>
                     </select>
                 </div>
                 <div id="que3" class="quecard">
                     <div class="que">Q. Most relevant games from below you play often.</div>
-                    <div class="options">
-                        <span class="option"><input type="radio" name="q3" id=""><span>High End action Games like PUBG,
-                                COD, Fortnite, etc</span></span>
-                        <span class="option"><input type="radio" name="q3" id=""><span>Candy Crush, Clash of Clans,
-                                Angry
-                                Birds, etc</span></span>
-                        <span class="option"><input type="radio" name="q3" id=""><span>Minimal games like Sudoku, 2048,
-                                Chess, etc</span></span>
-                        <span class="option"><input type="radio" name="q3" id=""><span>I don’t play games on
-                                phone</span></span>
-                    </div>
+                    <select name="q2" id="game" required>
+                        <option value="3">High End action Games like PUBG,
+                            COD, Fortnite, etc</option>
+                        <option value="2">Candy Crush, Clash of Clans,
+                            Angry
+                            Birds, etc</option>
+                        <option value="1">Minimal games like Sudoku, 2048,
+                            Chess, etc</option>
+                        <option value="0">I don’t play games on
+                            phone</option>
+                    </select>
                 </div>
                 <div id="que4" class="quecard">
                     <div class="que">Q. Do you often use your phone for online meetings/video conferencing?</div>
-                    <div class="options">
-                        <span class="option"><input type="radio" name="q4" id=""><span>No, rarely</span></span>
-                        <span class="option"><input type="radio" name="q4" id=""><span>Sometimes</span></span>
-                        <span class="option"><input type="radio" name="q4" id=""><span>Yes, often</span></span>
-                    </div>
+                    <select name="q4" id="meet" required>
+                        <option value="1">No, rarely</option>
+                        <option value="2">Sometimes</option>
+                        <option value="3">Yes, often</option>
+                    </select>
                 </div>
                 <div id="que5" class="quecard">
                     <div class="que">Q. How many apps among the following do you use <u>most often</u>?<br>Facebook <br>
@@ -169,26 +413,27 @@
                 <div id="que6" class="quecard">
                     <div class="que">Q. What is your age?</div>
                     <div class="options" style="text-align: center;">
-                        <span class="option">Enter your age : <input type="number" name="q6" id="" min="1" max="100"
+                        <span class="option">Enter your age : <input type="number" name="q6" id="age" min="1" max="100"
                                 value="20"><span></span></span>
                     </div>
                 </div>
                 <div id="que7" class="quecard">
                     <div class="que">Q. Would you use your phone to Edit photos and Videos?</div>
-                    <div class="options">
-                        <span class="option"><input type="radio" name="q7" id=""><span>No</span></span>
-                        <span class="option"><input type="radio" name="q7" id=""><span>Sometimes, May be</span></span>
-                        <span class="option"><input type="radio" name="q7" id=""><span>Yes, often</span></span>
-                    </div>
+                    <select name="q7" id="editor" required>
+                        <option value="1">No</option>
+                        <option value="2">Sometimes, May be</option>
+                        <option value="3">Yes, very often</option>
+                    </select>
                 </div>
                 <div id="que8" class="quecard">
                     <div class="que">Q. Do you often do Multitasking on your phone? <br> OR <br> Many important apps
                         stay opened on your phone at the same time?</div>
                     <div class="options">
                         <select name="q8" id="ram" required>
-                            <option value="4">Moderately</option>
                             <option value="2">No</option>
-                            <option value="6">Yes, very often</option>
+                            <option value="4">May be</option>
+                            <option value="6">Moderately</option>
+                            <option value="8">Yes, very often</option>
                         </select>
                     </div>
                 </div>
@@ -240,12 +485,12 @@
 
                 <div class="" id="letscheck">
                     <img style="-webkit-box-reflect:below -169px linear-gradient(transparent, transparent, rgba(255, 255, 255, 0.3));"
-                    src="./images/girlsearching.webp" alt="">
+                        src="./images/girlsearching.webp" alt="">
                     <div>
                         <p>Let's Check which smartphones matches you &#129321;</p>
                         <button id="quizsubmit" class="btn" onclick="captureAndSend()"
-                        style="margin: 20px; background-color: aqua; color: black;"><i class="fas fa-search"></i><a
-                        href="#displayResult">&nbsp;Find My Phone Match</a></button>
+                            style="margin: 20px; background-color: aqua; color: black;"><i class="fas fa-search"></i><a
+                                href="#displayResult">&nbsp;Find My Phone Match</a></button>
                     </div>
                 </div>
             </div>
@@ -337,6 +582,7 @@
             <!-- <p class="letscheck">Let's Check which smartphones matches you.</p>
             <img style="-webkit-box-reflect:below -169px linear-gradient(transparent, transparent, rgba(255, 255, 255, 0.3));"
                 src="./images/girlsearching.webp" alt=""> -->
+            <button onclick="reloadPage()"><a href="#landingpage" class="btn">Reload</a></button>
         </div>
 
         <div id="about" class="appFooter">
