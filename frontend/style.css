@@ -252,7 +252,9 @@ input {
 
 #headlinks>ul>li:hover {
     transform: scale(1.1);
-    color: white;
+}
+#headlinks>ul>li>a:hover {
+    color: var(--theme-logo);
 }
 
 
@@ -429,6 +431,20 @@ input {
 #displayResult>p {
     font-size: 2rem;
     /* border: 2px solid red; */
+}
+
+#Pprint{
+    text-align: center;
+}
+
+#showPersonalities{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 80vw;
+    padding: 0 10%;
+    justify-content: space-around;
+    text-align: center;
+    /* border: 10px solid red; */
 }
 
 .appFooter {

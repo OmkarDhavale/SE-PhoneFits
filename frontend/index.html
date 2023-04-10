@@ -238,24 +238,70 @@
         }
         
         var calculatePersonality = (PObj) => {
-            let Pname = "";
+            let Pname1 = "";
+            let Pname2 = "";
+            let Pname3 = "";
             let Psimilarity = 0;
             let arr = Object.values(PObj);
             let max = Math.max(...arr);
             let sum = (PObj.minimal +  PObj.consumer + PObj.official + PObj.student + PObj. average + PObj.camera + PObj.gamer);
-            let Ppercentage = (max / 7) * 100;
+            let P3percentage = 0;
+            let P2percentage = 0;
+            let P1percentage = (max / 7) * 100;
+            if(P1percentage === 100){P1percentage = 98;}
 
             console.log("Max : ", max);
-            if(PObj.minimal === max){console.log(Pname = "Minimal user");}
-            if(PObj.consumer === max){console.log(Pname = "Consumer");}
-            if(PObj.official === max){console.log(Pname = "Official user");}
-            if(PObj.student === max){console.log(Pname = "Student");}
-            if(PObj.average === max){console.log(Pname = "Average user");}
-            if(PObj.camera === max){console.log(Pname = "Camera user");}
-            if(PObj.gamer === max){console.log(Pname = "Gamer");}
+            
+            // Finding P1
+            if(PObj.minimal === max){console.log(Pname1 = "Minimal user");}
+            else if(PObj.consumer === max){console.log(Pname1 = "Consumer");}
+            else if(PObj.official === max){console.log(Pname1 = "Official user");}
+            else if(PObj.student === max){console.log(Pname1 = "Student");}
+            else if(PObj.average === max){console.log(Pname1 = "Average user");}
+            else if(PObj.camera === max){console.log(Pname1 = "Camera user");}
+            else if(PObj.gamer === max){console.log(Pname1 = "Gamer");}
 
-            document.getElementById('Pprint').innerHTML = `<br><p class=\"heading\">Personality detected : ${Pname}</p>`
-            document.getElementById('Pprint').innerHTML += `<br><p class=\"heading\">Similarity : ${Ppercentage.toFixed(2)} %</p>`
+            // Finding P2
+            if(PObj.minimal === max && !(Pname1 == "Minimal user")){console.log(Pname2 = "Minimal user"); P2percentage = (max / 7) * 100;}
+            else if(PObj.consumer === max && !(Pname1 == "Consumer")){console.log(Pname2 = "Consumer"); P2percentage = (max / 7) * 100;}
+            else if(PObj.official === max && !(Pname1 == "Official user")){console.log(Pname2 = "Official user"); P2percentage = (max / 7) * 100;}
+            else if(PObj.student === max && !(Pname1 == "Student")){console.log(Pname2 = "Student"); P2percentage = (max / 7) * 100;}
+            else if(PObj.average === max && !(Pname1 == "Average user")){console.log(Pname2 = "Average user"); P2percentage = (max / 7) * 100;}
+            else if(PObj.camera === max && !(Pname1 == "Camera user")){console.log(Pname2 = "Camera user"); P2percentage = (max / 7) * 100;}
+            else if(PObj.gamer === max && !(Pname1 == "Gamer")){console.log(Pname2 = "Gamer"); P2percentage = (max / 7) * 100;}
+            else if(PObj.minimal === max-1 && !(Pname1 == "Minimal user")){console.log(Pname2 = "Minimal user"); P2percentage = ((max-1) / 7) * 100;}
+            else if(PObj.consumer === max-1 && !(Pname1 == "Consumer")){console.log(Pname2 = "Consumer"); P2percentage = ((max-1) / 7) * 100;}
+            else if(PObj.official === max-1 && !(Pname1 == "Official user")){console.log(Pname2 = "Official user"); P2percentage = ((max-1) / 7) * 100;}
+            else if(PObj.student === max-1 && !(Pname1 == "Student")){console.log(Pname2 = "Student"); P2percentage = ((max-1) / 7) * 100;}
+            else if(PObj.average === max-1 && !(Pname1 == "Average user")){console.log(Pname2 = "Average user"); P2percentage = ((max-1) / 7) * 100;}
+            else if(PObj.camera === max-1 && !(Pname1 == "Camera user")){console.log(Pname2 = "Camera user"); P2percentage = ((max-1) / 7) * 100;}
+            else if(PObj.gamer === max-1 && !(Pname1 == "Gamer")){console.log(Pname2 = "Gamer"); P2percentage = ((max-1) / 7) * 100;}
+
+            // Finding P3
+            if(PObj.minimal === max-1 && !(Pname1 == "Minimal user") && !(Pname2 == "Minimal user")){console.log(Pname3 = "Minimal user"); P3percentage = ((max-1) / 7) * 100;}
+            else if(PObj.consumer === max-1 && !(Pname1 == "Consumer") && !(Pname2 == "Consumer")){console.log(Pname3 = "Consumer"); P3percentage = ((max-1) / 7) * 100;}
+            else if(PObj.official === max-1 && !(Pname1 == "Official user") && !(Pname2 == "Official user")){console.log(Pname3 = "Official user"); P3percentage = ((max-1) / 7) * 100;}
+            else if(PObj.student === max-1 && !(Pname1 == "Student") && !(Pname2 == "Student")){console.log(Pname3 = "Student"); P3percentage = ((max-1) / 7) * 100;}
+            else if(PObj.average === max-1 && !(Pname1 == "Average user") && !(Pname2 == "Average user")){console.log(Pname3 = "Average user"); P3percentage = ((max-1) / 7) * 100;}
+            else if(PObj.camera === max-1 && !(Pname1 == "Camera user") && !(Pname2 == "Camera user")){console.log(Pname3 = "Camera user"); P3percentage = ((max-1) / 7) * 100;}
+            else if(PObj.gamer === max-1 && !(Pname1 == "Gamer") && !(Pname2 == "Gamer")){console.log(Pname3 = "Gamer"); P3percentage = ((max-1) / 7) * 100;}
+            else if(PObj.minimal === max-2 && !(Pname1 == "Minimal user") && !(Pname2 == "Minimal user")){console.log(Pname3 = "Minimal user"); P3percentage = ((max-2) / 7) * 100;}
+            else if(PObj.consumer === max-2 && !(Pname1 == "Consumer") && !(Pname2 == "Consumer")){console.log(Pname3 = "Consumer"); P3percentage = ((max-2) / 7) * 100;}
+            else if(PObj.official === max-2 && !(Pname1 == "Official user") && !(Pname2 == "Official user")){console.log(Pname3 = "Official user"); P3percentage = ((max-2) / 7) * 100;}
+            else if(PObj.student === max-2 && !(Pname1 == "Student") && !(Pname2 == "Student")){console.log(Pname3 = "Student"); P3percentage = ((max-2) / 7) * 100;}
+            else if(PObj.average === max-2 && !(Pname1 == "Average user") && !(Pname2 == "Average user")){console.log(Pname3 = "Average user"); P3percentage = ((max-2) / 7) * 100;}
+            else if(PObj.camera === max-2 && !(Pname1 == "Camera user") && !(Pname2 == "Camera user")){console.log(Pname3 = "Camera user"); P3percentage = ((max-2) / 7) * 100;}
+            else if(PObj.gamer === max-2 && !(Pname1 == "Gamer") && !(Pname2 == "Gamer")){console.log(Pname3 = "Gamer"); P3percentage = ((max-2) / 7) * 100;}
+
+            console.log(`${Pname1} : ${P1percentage}`);
+            console.log(`${Pname2} : ${P2percentage}`);
+            console.log(`${Pname3} : ${P3percentage}`);
+            
+            // document.getElementById('Pprint').innerHTML = `<br><p class=\"heading\">Personality detected : You seem more like a <span class="logo">${Pname1}</span></p>`
+            document.getElementById('Pprint').innerHTML = `<br><p class=\"heading\">Personality detected</p>`
+            document.getElementById('showPersonalities').innerHTML = `<br><p class=\"heading\">${Pname1} <br> ${P1percentage.toFixed(2)} %</p>`
+            if(P2percentage){document.getElementById('showPersonalities').innerHTML += `<br><p class=\"heading\">${Pname2} <br> ${P2percentage.toFixed(2)} %</p>`}
+            if(P3percentage){document.getElementById('showPersonalities').innerHTML += `<br><p class=\"heading\">${Pname3} <br> ${P3percentage.toFixed(2)} %</p>`}
         }
         
         //This is main js code
@@ -287,14 +333,14 @@
 
             var dict = new Object();
             var dict = {
-                ram: ram,
-                rom: rom,
-                camera: camera,
-                battery: battery,
+                "ram": ram,
+                "rom": rom,
+                "camera": camera,
+                "battery": battery,
                 // processor:processor,
-                size: size,
-                rating: rating,
-                budget: budget,
+                "size": size,
+                "rating": rating,
+                "budget": budget,
             }
             // alert('Selected'+" "+"Ram:"+ram+" "+"Rom:"+rom+" "+"Camera: "+camera+" "+"Battery: "+battery+" "+"Processor: "+processor+" "+" Size:"+size+" "+"Warranty"+warranty+" "+"Budget:"+budget)
             //this function is accessible from py
@@ -387,7 +433,7 @@
                     <select name="q2" id="camera" required>
                         <option value="30">Moderately</option>
                         <option value="15">No</option>
-                        <option value='64'>Yes, very often</option>
+                        <option value="64">Yes, very often</option>
                     </select>
                 </div>
                 <div id="que3" class="quecard">
@@ -606,7 +652,10 @@
             <img style="-webkit-box-reflect:below -169px linear-gradient(transparent, transparent, rgba(255, 255, 255, 0.3));"
                 src="./images/girlsearching.webp" alt=""> -->
             <!-- <button onclick="reloadPage()"><a href="#landingpage" class="btn">ReQuiz</a></button> -->
-            <div id="Pprint"></div>
+            <div>
+                <div id="Pprint"></div>
+                <div id="showPersonalities"></div>
+            </div>
         </div>
 
         <div id="about" class="appFooter">

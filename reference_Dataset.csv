@@ -92,8 +92,8 @@ Name,Rating,Price Rs,RAM Gb,ROM Gb,Expandable GB,Size Cm,Size Inch,R1 Cam MP,R2 
 "Redmi 8A Dual (Midnight Grey, 32 GB)",4.2,"8,949",3,32,512,15.8,6.22,13,2,,,5000,Qualcomm Snapdragon 439 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Motorola One Fusion+ (Moonlight White, 128 GB)",4.4,"17,499",6,128,1,16.51,6.5,64,8,5,2,5000,Qualcomm Snapdragon 730G Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "OPPO F17 (Dynamic Orange, 128 GB)",4.4,"17,990",6,128,,16.36,6.44,16,8,2,2,4015,Qualcomm Snapdragon 662 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
-"OPPO F17 (Dynamic Orange, 128 GB)",,"19,990",8,128,,16.36,6.44,16,8,2,2,4015,Qualcomm Snapdragon 662 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
-"OPPO F17 (Navy Blue, 128 GB)",,"19,990",8,128,,16.36,6.44,16,8,2,2,4015,Qualcomm Snapdragon 662 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
+"OPPO F17 (Dynamic Orange, 128 GB)",4.3,"19,990",8,128,,16.36,6.44,16,8,2,2,4015,Qualcomm Snapdragon 662 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
+"OPPO F17 (Navy Blue, 128 GB)",4.3,"19,990",8,128,,16.36,6.44,16,8,2,2,4015,Qualcomm Snapdragon 662 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "TECNO SPARK 6 AIR (COMET BLACK, 32 GB)",4.3,"7,815",2,32,,17.78,7,13,,,,6000,MediaTek Helio A22 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Redmi Note 9 (Scarlet Red, 64 GB)",4.4,"13,442",4,64,,16.59,6.53,48,,,,5020,MediaTek Helio G85 Processor,https://rukminim1.flixcart.com/image/312/312/kdqa4y80/mobile/a/e/r/mi-redmi-note-9-m2003j15si-original-imafukarcpe9ayme.jpeg?q=70
 "Redmi Note 9 (Aqua Green, 128 GB)",4.4,"14,049",4,128,512,16.59,6.53,48,,,,5020,MediaTek Helio G85 Processor,https://rukminim1.flixcart.com/image/312/312/kd69z0w0/mobile/4/z/u/mi-redmi-note-9-b086982zkf-original-imafu4pyhhpwuzaw.jpeg?q=70
@@ -117,7 +117,7 @@ Name,Rating,Price Rs,RAM Gb,ROM Gb,Expandable GB,Size Cm,Size Inch,R1 Cam MP,R2 
 "Realme C3 (Frozen Blue, 64 GB)",4.4,"9,999",4,64,256,16.56,6.52,12,2,,,5000,Helio G70 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Realme 6i (Eclipse Black, 64 GB)",4.5,"12,999",4,64,256,16.51,6.5,48,8,2,2,4300,MediaTek Helio G90T Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Redmi 8 (Ruby Red, 64 GB)",4.4,"9,999",4,64,512,15.8,6.22,12,2,,,5000,Qualcomm Snapdragon 439 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
-"POCO X3 (Cobalt Blue, 128 GB)",,"18,499",6,128,512,16.94,6.67,64,13,2,2,6000,Qualcomm Snapdragon 732G Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
+"POCO X3 (Cobalt Blue, 128 GB)",4.1,"18,499",6,128,512,16.94,6.67,64,13,2,2,6000,Qualcomm Snapdragon 732G Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Realme Narzo 10 (That White, 128 GB)",4.5,"11,999",4,128,256,16.51,6.5,48,8,2,2,5000,MediaTek Helio G80 (12 nm) Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "POCO X2 (Phoenix Red, 256 GB)",4.5,"21,499",8,256,512,16.94,6.67,64,8,2,2,4500,Qualcomm Snapdragon 730G Processor,https://rukminim1.flixcart.com/image/312/312/k65d18w0/mobile/g/7/3/poco-x2-na-original-imafzz2hjssyrsha.jpeg?q=70
 "Realme X3 (Arctic White, 128 GB)",4.3,"24,999",6,128,,16.69,6.57,64,12,8,2,4200,Qualcomm Snapdragon 855+ Processor,https://rukminim1.flixcart.com/image/312/312/kbs9k7k0/mobile/y/z/a/realme-x3-rmx2081-original-imaft26hnnytnuqg.jpeg?q=70
@@ -264,10 +264,10 @@ Name,Rating,Price Rs,RAM Gb,ROM Gb,Expandable GB,Size Cm,Size Inch,R1 Cam MP,R2 
 "Vivo V19 (Piano Black, 128 GB)",4.4,"24,990",8,128,512,16.36,6.44,48,8,2,2,4500,Qualcomm Snapdragon 712 AIE Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Redmi Y2 (Blue, 32 GB)",4.5,"9,199",3,32,256,15.21,5.99,12,5,,,3080,Qualcomm Snapdragon 625 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Redmi Note 9 Pro Max (Champagne Gold, 128 GB)",4.3,"19,699",6,128,512,16.94,6.67,64,8,,,5020,Qualcomm Snapdragon 720G Processor,https://rukminim1.flixcart.com/image/312/312/ken59jk0/mobile/k/g/w/mi-redmi-note-9-pro-max-m2003j6b1l-original-imafv9zfdjwuys9g.jpeg?q=70
-"Realme Narzo 20A (Victory Blue, 64 GB)",,"9,499",4,64,256,16.51,6.5,12,2,2,,5000,Qualcomm Snapdragon 665 Processor,https://rukminim1.flixcart.com/image/312/312/kfbfr0w0/mobile/7/q/z/realme-narzo-20a-rmx2050-original-imafvswtu6wjavce.jpeg?q=70
-"Realme Narzo 20A (Victory Blue, 32 GB)",,"8,499",3,32,256,16.51,6.5,12,2,2,,5000,Qualcomm Snapdragon 665 Processor,https://rukminim1.flixcart.com/image/312/312/kfbfr0w0/mobile/7/q/z/realme-narzo-20a-rmx2050-original-imafvswtu6wjavce.jpeg?q=70
-"Realme Narzo 20A (Glory Sliver, 64 GB)",,"9,499",4,64,256,16.51,6.5,12,2,2,,5000,Qualcomm Snapdragon 665 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
-"Realme Narzo 20A (Glory Sliver, 32 GB)",,"8,499",3,32,256,16.51,6.5,12,2,2,,5000,Qualcomm Snapdragon 665 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
+"Realme Narzo 20A (Victory Blue, 64 GB)",4.3,"9,499",4,64,256,16.51,6.5,12,2,2,,5000,Qualcomm Snapdragon 665 Processor,https://rukminim1.flixcart.com/image/312/312/kfbfr0w0/mobile/7/q/z/realme-narzo-20a-rmx2050-original-imafvswtu6wjavce.jpeg?q=70
+"Realme Narzo 20A (Victory Blue, 32 GB)",4.3,"8,499",3,32,256,16.51,6.5,12,2,2,,5000,Qualcomm Snapdragon 665 Processor,https://rukminim1.flixcart.com/image/312/312/kfbfr0w0/mobile/7/q/z/realme-narzo-20a-rmx2050-original-imafvswtu6wjavce.jpeg?q=70
+"Realme Narzo 20A (Glory Sliver, 64 GB)",4.3,"9,499",4,64,256,16.51,6.5,12,2,2,,5000,Qualcomm Snapdragon 665 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
+"Realme Narzo 20A (Glory Sliver, 32 GB)",4.3,"8,499",3,32,256,16.51,6.5,12,2,2,,5000,Qualcomm Snapdragon 665 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Motorola G9 (Sapphire Blue, 64 GB)",4.1,"11,499",4,64,512,16.51,6.5,48,2,2,,5000,Qualcomm Snapdragon 662 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "OPPO F15 (Lightening Black, 128 GB)",4.3,"16,990",4,128,256,16.26,6.4,48,8,2,2,4000,MediaTek Helio P70 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Samsung Galaxy A31 (Prism Crush Blue, 128 GB)",4.3,"19,999",6,128,512,16.26,6.4,48,8,5,5,5000,MediaTek (MT6768) Octa Core Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
@@ -356,7 +356,7 @@ Name,Rating,Price Rs,RAM Gb,ROM Gb,Expandable GB,Size Cm,Size Inch,R1 Cam MP,R2 
 "Redmi Note 9 Pro Max (Interstellar Black, 64 GB)",4.3,"17,900",6,64,,16.94,6.67,64,,,,5020,Snapdragon 730G Octa Core Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "OPPO Reno2 (Ocean Blue, 256 GB)",4.5,"39,990",8,256,256,16.51,6.5,48,8,13,2,4000,Qualcomm Snapdragon 730G Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Redmi Note 8 Pro (Shadow Black, 64 GB)",4.4,"15,999",6,64,512,16.59,6.53,64,8,2,2,4500,MediaTek Helio G90T Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
-"TECNO Spark Air 6 (White, 32 GB)",,"8,240",2,32,,17.78,7,13,,,,6000,MediaTek Helio A25 Octa core Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
+"TECNO Spark Air 6 (White, 32 GB)",3,"8,240",2,32,,17.78,7,13,,,,6000,MediaTek Helio A25 Octa core Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Honor 9X (Midnight Black, 128 GB)",4.4,"16,999",6,128,512,16.74,6.59,48,8,2,,4000,Kirin 710F Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Realme X (Space Blue, 128 GB)",4.5,"17,999",4,128,,16.59,6.53,48,5,,,3765,Qualcomm Snapdragon 710 Octa Core 2.2 GHz AIE Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Realme X (Space Blue, 128 GB)",4.5,"17,999",4,128,,16.59,6.53,48,5,,,3765,Qualcomm Snapdragon 710 Octa Core 2.2 GHz AIE Processor,https://rukminim1.flixcart.com/image/312/312/k3ncakw0pkrrdj/mobile/a/h/w/realme-x-rmx1901-original-imafgzg9yvran9r3.jpeg?q=70
@@ -380,8 +380,8 @@ Name,Rating,Price Rs,RAM Gb,ROM Gb,Expandable GB,Size Cm,Size Inch,R1 Cam MP,R2 
 "Redmi K20 (Glacier Blue, 128 GB)",4.5,"21,999",6,128,,16.23,6.39,48,13,8,,4000,Qualcomm Snapdragon 730 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "OPPO A52 (Twilight Black, 128 GB)",4.3,"16,990",6,128,256,16.51,6.5,12,8,2,2,5000,Qualcomm Snapdragon 665 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "OPPO A52 (Stream White, 128 GB)",4.3,"16,990",6,128,256,16.51,6.5,12,8,2,2,5000,Qualcomm Snapdragon 665 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
-"OPPO A52 (Twilight Black, 128 GB)",,"14,990",4,128,256,16.51,6.5,12,8,2,2,5000,Qualcomm Snapdragon 665 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
-"OPPO A52 (Stream White, 128 GB)",,"14,990",4,128,256,16.51,6.5,12,8,2,2,5000,Qualcomm Snapdragon 665 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
+"OPPO A52 (Twilight Black, 128 GB)",3.9,"14,990",4,128,256,16.51,6.5,12,8,2,2,5000,Qualcomm Snapdragon 665 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
+"OPPO A52 (Stream White, 128 GB)",3.9,"14,990",4,128,256,16.51,6.5,12,8,2,2,5000,Qualcomm Snapdragon 665 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Redmi K20 (Carbon Black, 64 GB)",4.5,"21,999",6,64,,16.23,6.39,48,13,8,,4000,Qualcomm Snapdragon 730 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Samsung Galaxy A50s (Prism Crush Violet, 128 GB)",4.3,"18,570",4,128,,16.26,6.4,48,5,8,,4000,Exynos 9611 Processor,https://rukminim1.flixcart.com/image/312/312/k0flmkw0/mobile/x/e/s/samsung-galaxy-a50s-sm-a507fzlvins-original-imafk8h4pfhftnz6.jpeg?q=70
 "iQOO 3 (Quantum Silver, 128 GB)",4.5,"34,990",8,128,,16.36,6.44,48,13,13,2,4440,Qualcomm Snapdragon 865 Processor,https://rukminim1.flixcart.com/image/312/312/k6tniq80/mobile/c/5/j/iqoo-3-i1927-4g-pd1964bf-ex-original-imafp773fqky9zhz.jpeg?q=70
@@ -487,9 +487,9 @@ Name,Rating,Price Rs,RAM Gb,ROM Gb,Expandable GB,Size Cm,Size Inch,R1 Cam MP,R2 
 "LG Q60 (Blue, 64 GB)",4.2,"13,288",3,64,,15.9,6.26,16,,,,3500,Cortex A53 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Vivo V11 (Starry Night Black, 64 GB)",4.5,"24,990",6,64,256,16,6.3,16,5,,,3315,MediaTek P60 Octa Core 2.0 GHz Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Redmi Note 9 pro max (Aurora Blue, 64 GB)",4.5,"17,900",6,64,,16.94,6.67,64,,,,5020,Cortex A53 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
-"Ismart I1 Extreme (Purple, 16 GB)",,"6,299",2,16,,15.24,6,5,,,,2800,Quad core Processor ,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
-"Ismart I1 Extreme (Blue, 16 GB)",,"6,299",2,16,,15.24,6,5,,,,2800,Quad core Processor ,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
-"OPPO R17 (Ambient Blue, 128 GB)",,"22,998",8,128,,16.26,6.4,16,,,,3500,Qualcomm Snapdragon 670 octa core Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
+"Ismart I1 Extreme (Purple, 16 GB)",2.8,"6,299",2,16,,15.24,6,5,,,,2800,Quad core Processor ,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
+"Ismart I1 Extreme (Blue, 16 GB)",2.8,"6,299",2,16,,15.24,6,5,,,,2800,Quad core Processor ,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
+"OPPO R17 (Ambient Blue, 128 GB)",3.8,"22,998",8,128,,16.26,6.4,16,,,,3500,Qualcomm Snapdragon 670 octa core Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Samsung Galaxy A70s (Prism Crush White, 128 GB)",4.2,"31,000",6,128,512,17.02,6.7,64,5,8,,4500,Qualcomm SM6150 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "OPPO Reno 10x Zoom (Ocean Green, 128 GB)",4.5,"41,990",6,128,256,16.76,6.6,48,13,8,,4065,Qualcomm Snapdragon 855 Octa Core 2.8 GHz Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Nokia 2.3 (Sand, 32 GB)",4.1,"9,999",2,32,512,15.75,6.2,13,2,,,4000,MediaTek Helio A22 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
@@ -503,7 +503,7 @@ Name,Rating,Price Rs,RAM Gb,ROM Gb,Expandable GB,Size Cm,Size Inch,R1 Cam MP,R2 
 "Nokia 3.1 Plus (Baltic, 32 GB)",4.2,"10,440",3,32,,15.24,6,13,,,,3500,Cortex A53 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "I Kall K 320 (Purple, 64 GB)",3.6,"6,699",4,64,,16.59,6.53,13,2,,,4000,Quad-core Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Redmi Note 4 (Black, 64 GB)",4.4,"13,999",4,64,128,13.97,5.5,13,,,,4100,Qualcomm Snapdragon 625 64-bit Octa Core 2GHz Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
-"Spinup A9 (Blue, 32 GB)",,"6,449",2,32,,15.82,6.23,8,,,,3000,Quad core Processor,https://rukminim1.flixcart.com/image/312/312/kevpwnk0/mobile/z/z/x/spinup-a9-a9-original-imafvgrzr3xgyjdx.jpeg?q=70
+"Spinup A9 (Blue, 32 GB)",2,"6,449",2,32,,15.82,6.23,8,,,,3000,Quad core Processor,https://rukminim1.flixcart.com/image/312/312/kevpwnk0/mobile/z/z/x/spinup-a9-a9-original-imafvgrzr3xgyjdx.jpeg?q=70
 "Vivo V11 Pro (Starry Night Black, 64 GB)",4.5,"28,990",6,64,256,16.28,6.41,12,5,,,3400,2.0 GHz Qualcomm Snapdragon 660 AIE Processor,https://rukminim1.flixcart.com/image/312/312/jlph9jk0/mobile/x/e/z/vivo-v11-pro-1804-1814-original-imaf8ru5zqgwvg5s.jpeg?q=70
 "Itel A22 Pro (Midnight Black, 16 GB)",4.1,"5,970",2,16,,12.7,5,5,,,,2400,Qualcomm Processor,https://rukminim1.flixcart.com/image/312/312/jqfinww0/mobile/6/q/r/itel-a22-pro-a22-pro-original-imafcg6k3ryefsen.jpeg?q=70
 "Ismart I1 Dynamite (PRUPLE BLUE, 16 GB)",2.8,"4,999",2,16,64,12.7,5,5,,,,2800,Quad core Mediatek Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
@@ -608,7 +608,7 @@ Honor 8,4.4,"29,999",4,32,128,13.21,5.2,12,12,,,3000,ARM Hisilicon Kirin 950 - A
 "Vivo Y91i (Ocean Blue, 16 GB)",4.3,"8,350",2,16,256,15.8,6.22,13,,,,4030,MTK Helio P22 Processor,https://rukminim1.flixcart.com/image/312/312/k2jbyq80pkrrdj/mobile-refurbished/5/q/e/y91i-32-u-1820-vivo-2-original-imafegpdvpncyxew.jpeg?q=70
 "Realme X50 Pro (Rust Red, 128 GB)",4.4,"41,999",8,128,,16.36,6.44,64,12,8,2,4200,Qualcomm Snapdragon 865 Processor,https://rukminim1.flixcart.com/image/312/312/k6zda4w0/mobile/v/m/q/realme-x50-pro-rmx2076-original-imafpbbvwqm4kjnv.jpeg?q=70
 "Realme X50 Pro (Moss Green, 128 GB)",4.4,"41,999",8,128,,16.36,6.44,64,12,8,2,4200,Qualcomm Snapdragon 865 Processor,https://rukminim1.flixcart.com/image/312/312/k6zda4w0/mobile/h/y/8/realme-x50-pro-rmx2076-original-imafpbbvbwfcpz2r.jpeg?q=70
-"Samsung GALAXY M31S (Mirage Black, 128 GB)",,"25,990",8,128,,16.51,6.5,64,,,,6000,Exynos 9611 octa core Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
+"Samsung GALAXY M31S (Mirage Black, 128 GB)",4,"25,990",8,128,,16.51,6.5,64,,,,6000,Exynos 9611 octa core Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "OPPO Reno3 Pro (Sky White, 128 GB)",4.4,"27,990",8,128,256,16.26,6.4,64,13,8,2,4025,MediaTek Helio P95 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Samsung Galaxy A20s (Black, 64 GB)",4.3,"14,900",4,64,512,16.51,6.5,13,8,5,,4000,Qualcomm SDM450-B01 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Tecno Camon 15 Pro (Ice Jadite, 128 GB)",4.1,"15,999",6,128,256,16.59,6.53,48,2,5,,4000,Helio P35 MT6765 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
@@ -633,9 +633,9 @@ Honor 8,4.4,"29,999",4,32,128,13.21,5.2,12,12,,,3000,ARM Hisilicon Kirin 950 - A
 "Vivo Y71 (Matte Black, 16 GB)",4.3,"10,900",3,16,256,15.24,6,13,,,,3360,Qualcomm Snapdragon 425 Processor,https://rukminim1.flixcart.com/image/312/312/jgb5dow0/mobile/x/r/h/vivo-y71-1724-original-imaf48j5gmwpynym.jpeg?q=70
 "Vivo Y71 (Gold, 16 GB)",4.3,"10,900",3,16,256,15.24,6,13,,,,3360,Qualcomm Snapdragon 425 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Vivo Y71 (Matte Black, 32 GB)",4.3,"12,000",4,32,256,15.24,6,13,,,,3360,Qualcomm Snapdragon 425 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
-"I Kall K260 (Blue, 16 GB)",,"4,699",2,16,,13.84,5.45,8,,,,4000,"Quad Core, 1.3 GHz Processor",https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
-"I Kall K260 (Purple, 16 GB)",,"4,699",2,16,,13.84,5.45,8,,,,4000,"Quad Core, 1.3 GHz Processor",https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
-"I Kall K260 (Green, 16 GB)",,"4,699",2,16,,13.84,5.45,8,,,,4000,"Quad Core, 1.3 GHz Processor",https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
+"I Kall K260 (Blue, 16 GB)",3,"4,699",2,16,,13.84,5.45,8,,,,4000,"Quad Core, 1.3 GHz Processor",https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
+"I Kall K260 (Purple, 16 GB)",3,"4,699",2,16,,13.84,5.45,8,,,,4000,"Quad Core, 1.3 GHz Processor",https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
+"I Kall K260 (Green, 16 GB)",3,"4,699",2,16,,13.84,5.45,8,,,,4000,"Quad Core, 1.3 GHz Processor",https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Forme R7S (Champagne Gold, 16 GB)",3.5,"6,999",3,16,64,13.97,5.5,13,,,,2900,Mediatek MTK6737 Quad-core Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Redmi 8A (Sunset Red, 32 GB)",4.3,"8,999",3,32,512,15.8,6.22,12,,,,5000,Qualcomm Snapdragon 439 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Samsung Galaxy M11 (Violet, 32 GB)",4.2,"10,897",3,32,512,16.26,6.4,13,5,2,,5000,Qualcomm Snapdragon (SDM450-F01) Octa Core Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
@@ -649,7 +649,7 @@ Honor 8,4.4,"29,999",4,32,128,13.21,5.2,12,12,,,3000,ARM Hisilicon Kirin 950 - A
 "Huawei P9 (Titanium Grey, 32 GB)",4.5,"39,999",3,32,128,13.21,5.2,12,12,,,3000,HUAWEI Kirin 955 ARM Cortex-A72 64-bit + ARM Cortex-A53 64-bit Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Huawei P9 (Mystic Silver, 32 GB)",4.5,"39,999",3,32,128,13.21,5.2,12,12,,,3000,HUAWEI Kirin 955 ARM Cortex-A72 64-bit + ARM Cortex-A53 64-bit Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "BlackZone UNI 4G (SKYLINE BLUE, 16 GB)",3.4,"5,500",2,16,,15.21,5.99,8,,,,3000,MediaTek Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
-"OPPO R17 (Neon Purple, 128 GB)",,"36,990",8,128,,16.26,6.4,16,,,,3500,Qualcomm Snapdragon 670 Octa Core Processor ,https://rukminim1.flixcart.com/image/312/312/jw6pifk0/mobile-refurbished/z/s/x/r17-128-c-r17-oppo-8-original-imafgk87r3vjvmbd.jpeg?q=70
+"OPPO R17 (Neon Purple, 128 GB)",3.9,"36,990",8,128,,16.26,6.4,16,,,,3500,Qualcomm Snapdragon 670 Octa Core Processor ,https://rukminim1.flixcart.com/image/312/312/jw6pifk0/mobile-refurbished/z/s/x/r17-128-c-r17-oppo-8-original-imafgk87r3vjvmbd.jpeg?q=70
 "BlackZone UNI 4G (AURORA BLUE, 16 GB)",3.4,"5,500",2,16,,15.21,5.99,8,,,,3000,MediaTek Processor,https://rukminim1.flixcart.com/image/312/312/kd1zngw0/mobile/g/y/a/blackzone-uni-4g-uni-4g-original-imafuf3ppu8qvbnc.jpeg?q=70
 "Vivo V5s Perfect Selfie (Matte Black, 64 GB)",4.3,"18,690",4,64,256,13.97,5.5,13,,,,3000,MediaTek MT6750 64-bit Octa Core 1.5GHz Processor,https://rukminim1.flixcart.com/image/312/312/j2z1fgw0/mobile/5/7/h/vivo-v5s-1713-original-imaeu5e8m9xrhtjf.jpeg?q=70
 "Samsung Galaxy A30 (Black, 64 GB)",4.4,"17,500",4,64,512,16.26,6.4,16,5,,,4000,Exynos 7904 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
@@ -829,8 +829,8 @@ Honor 8,4.4,"29,999",4,32,128,13.21,5.2,12,12,,,3000,ARM Hisilicon Kirin 950 - A
 "Karbonn Titanium S9 Plus (Midnight Blue, 32 GB)",3.7,"6,699",2,32,,15.49,6.1,8,,,,3000,Quadcore Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Redmi Note 5 Pro (Rose Gold, 64 GB)",4.5,"13,790",4,64,128,15.21,5.99,12,5,,,4000,Qualcomm Snapdragon 636 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Redmi 6 Pro (Gold, 32 GB)",4.3,"10,995",3,32,256,14.83,5.84,12,5,,,4000,Qualcomm Snapdragon 625 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
-"I Kall K-2 PLUS (Blue, 64 GB)",,"5,899",4,64,,13.97,5.5,8,,,,3000,Quadcore Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
-"I Kall K-2 PLUS (Green & Blue, 64 GB)",,"5,899",4,64,,13.97,5.5,8,,,,3000,Quadcore Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
+"I Kall K-2 PLUS (Blue, 64 GB)",3.5,"5,899",4,64,,13.97,5.5,8,,,,3000,Quadcore Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
+"I Kall K-2 PLUS (Green & Blue, 64 GB)",3.5,"5,899",4,64,,13.97,5.5,8,,,,3000,Quadcore Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Redmi Y3 (Prime Black, 32 GB)",4.3,"10,990",3,32,512,15.9,6.26,12,2,,,4000,Qualcomm Snapdragon 632 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Lenovo Z6 Pro (Black, 128 GB)",3.8,"26,999",8,128,512,16.23,6.39,48,2,16,8,4000,Qualcomm SDM855 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Micromax CANVAS 2 PLUS (jet black, 32 GB)",3.8,"7,799",3,32,,14.48,5.7,13,,,,4000,Quadcore Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
@@ -889,11 +889,11 @@ Honor 8,4.4,"29,999",4,32,128,13.21,5.2,12,12,,,3000,ARM Hisilicon Kirin 950 - A
 "Virat FanBox Moto G Turbo Virat Kohli (Black, 16 GB)",4.2,"8,999",2,16,32,12.7,5,13,,,,2470,Qualcomm Snapdragon Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Realme 1 (Moonlight Silver, 128 GB)",4.3,"10,990",6,128,,15.24,6,13,,,,3410,MediaTek Helio P60 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Realme 1 (Diamond Black, 128 GB)",4.3,"10,999",6,128,,15.24,6,13,,,,3410,MediaTek Helio P60 Processor,https://rukminim1.flixcart.com/image/312/312/jr3t5e80/mobile/w/q/z/realme-realme1-realme1-original-imafaxtzykdnzap3.jpeg?q=70
-"Realme 1 (Diamond Red, 32 GB)",,"11,900",3,32,,15.24,6,13,,,,3410,MediaTek Helio P60 Processor,https://rukminim1.flixcart.com/image/312/312/jr3t5e80/mobile/f/w/z/realme-realme1-cph1859-original-imafcws4dverzfqv.jpeg?q=70
+"Realme 1 (Diamond Red, 32 GB)",4,"11,900",3,32,,15.24,6,13,,,,3410,MediaTek Helio P60 Processor,https://rukminim1.flixcart.com/image/312/312/jr3t5e80/mobile/f/w/z/realme-realme1-cph1859-original-imafcws4dverzfqv.jpeg?q=70
 "Realme 1 (Diamond Red, 64 GB)",4.3,"10,299",4,64,,15.24,6,13,,,,3410,MediaTek Helio P60 Processor,https://rukminim1.flixcart.com/image/312/312/jr3t5e80/mobile/f/w/z/realme-realme1-cph1859-original-imafcws4dverzfqv.jpeg?q=70
-"Realme 1 (Diamond Black, 32 GB)",,"11,990",3,32,,15.24,6,13,,,,3410,MediaTek Helio P60 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
+"Realme 1 (Diamond Black, 32 GB)",4,"11,990",3,32,,15.24,6,13,,,,3410,MediaTek Helio P60 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Realme 1 (Black, 64 GB)",4.3,"10,990",4,64,,15.24,6,13,,,,3410,MediaTek Helio P60 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
-"Realme 1 (Moonlight Silver, 32 GB)",,"10,999",3,32,,15.24,6,13,,,,3410,MediaTek Helio P60 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
+"Realme 1 (Moonlight Silver, 32 GB)",4.3,"10,999",3,32,,15.24,6,13,,,,3410,MediaTek Helio P60 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Redmi Note 5 (Black, 64 GB)",4.4,"11,490",4,64,128,15.21,5.99,12,,,,4000,Qualcomm Snapdragon 625 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "Vivo Y53i (Matte Black, 16 GB)",4.2,"7,990",2,16,256,12.7,5,8,,,,2500,Qualcomm MSM8917 Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
 "OPPO K3 (Aurora Blue, 64 GB)",4.2,"23,990",6,64,,16.51,6.5,16,,,,3765,Snapdragon 710 octa core Processor,https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/placeholder_9951d0.svg
