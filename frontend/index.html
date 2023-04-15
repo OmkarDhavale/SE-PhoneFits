@@ -304,9 +304,14 @@
             if (P3percentage) { document.getElementById('showPersonalities').innerHTML += `<br><p class=\"heading\">${Pname3} <br> ${P3percentage.toFixed(2)} %</p>` }
         }
 
-        function buyaction(phonename){
+        function buyaction_flipkart(phonename){
             console.log("Phone to buy is ", phonename);
             url = 'https://www.flipkart.com/search?q=' + phonename;
+            window.open(url, '_blank');
+        }
+        function buyaction_amazon(phonename){
+            console.log("Phone to buy is ", phonename);
+            url = 'https://www.amazon.in/s?k=' + phonename;
             window.open(url, '_blank');
         }
 
@@ -362,12 +367,12 @@
             for (var key in pyToJs) {
                 console.log("This is key : ", key + " -> " + pyToJs[key]['ram']);
                 var displayResult = document.getElementById('displayResult');
-                var html = `<div id="displayMsg"><h1>[Name]</h4><img src="[img]" alt="mobile" class="resultMobileImg"></h2><h2>RAM &emsp;&emsp;&ensp;: [ram] GB</h2><h2>ROM &emsp;&emsp;&ensp;: [rom] GB</h2><h2>Camera &emsp;&nbsp;: [camera] MP<h2><h2>Battery &emsp;&ensp;: [battery] MAh</h2><h2>Processor &ensp;: [processor]</h2><h2>Size &emsp;&emsp;&emsp;: [size] inch <h2>Price &emsp;&emsp;&ensp;: [budget] RS</h2><button onclick="buyaction('[phonename]')">Buy Now</button></div>`;
-                // var html = `<div id="displayMsg"><h1>[Name]</h4><img src="[img]" alt="mobile" class="resultMobileImg"></h2><h2>RAM &emsp;&emsp;&ensp;: [ram] GB</h2><h2>ROM &emsp;&emsp;&ensp;: [rom] GB</h2><h2>Camera &emsp;&nbsp;: [camera] MP<h2><h2>Battery &emsp;&ensp;: [battery] MAh</h2><h2>Processor &ensp;: [processor]</h2><h2>Size &emsp;&emsp;&emsp;: [size] inch <h2>Price &emsp;&emsp;&ensp;: [budget] RS</h2><button onclick="buyaction('[phonename]')">Buy Now</button></div>`;
+                var html = `<div id="displayMsg"><h1>[Name]</h4><img src="[img]" alt="mobile" class="resultMobileImg"></h2><h2>RAM &emsp;&emsp;&ensp;: [ram] GB</h2><h2>ROM &emsp;&emsp;&ensp;: [rom] GB</h2><h2>Camera &emsp;&nbsp;: [camera] MP<h2><h2>Battery &emsp;&ensp;: [battery] MAh</h2><h2>Processor &ensp;: [processor]</h2><h2>Size &emsp;&emsp;&emsp;: [size] inch <h2>Price &emsp;&emsp;&ensp;: [budget] RS</h2><div class="buyBtns"><h2>Buy Now</h2><div><button class="buyBtn" onclick="buyaction_flipkart('[phonename]')">Flipkart</button><button class="buyBtn" onclick="buyaction_amazon('[phonename2]')">Amazon</button></div></div></div>`;
                 var newHtml = html.replace('[ram]', pyToJs[key]['ram']);
                 newHtml = newHtml.replace('[rom]', pyToJs[key]['rom']);
                 newHtml = newHtml.replace('[Name]', key);
                 newHtml = newHtml.replace('[phonename]', key);
+                newHtml = newHtml.replace('[phonename2]', key);
                 newHtml = newHtml.replace('[camera]', pyToJs[key]['camera']);
                 newHtml = newHtml.replace('[battery]', pyToJs[key]['battery']);
                 newHtml = newHtml.replace('[processor]', pyToJs[key]['processor']);
