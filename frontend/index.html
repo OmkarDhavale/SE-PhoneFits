@@ -236,7 +236,7 @@
                 alert(`Budget Rs.${personality} : Chlo dekhte hai saste me mast phone aapke liye`);
             }
         }
-        
+
         var calculatePersonality = (PObj) => {
             let Pname1 = "";
             let Pname2 = "";
@@ -244,66 +244,66 @@
             let Psimilarity = 0;
             let arr = Object.values(PObj);
             let max = Math.max(...arr);
-            let sum = (PObj.minimal +  PObj.consumer + PObj.official + PObj.student + PObj. average + PObj.camera + PObj.gamer);
+            let sum = (PObj.minimal + PObj.consumer + PObj.official + PObj.student + PObj.average + PObj.camera + PObj.gamer);
             let P3percentage = 0;
             let P2percentage = 0;
             let P1percentage = (max / 7) * 100;
-            if(P1percentage === 100){P1percentage = 98;}
+            if (P1percentage === 100) { P1percentage = 98; }
 
             console.log("Max : ", max);
-            
+
             // Finding P1
-            if(PObj.minimal === max){console.log(Pname1 = "Minimal user");}
-            else if(PObj.consumer === max){console.log(Pname1 = "Consumer");}
-            else if(PObj.official === max){console.log(Pname1 = "Official user");}
-            else if(PObj.student === max){console.log(Pname1 = "Student");}
-            else if(PObj.average === max){console.log(Pname1 = "Average user");}
-            else if(PObj.camera === max){console.log(Pname1 = "Camera user");}
-            else if(PObj.gamer === max){console.log(Pname1 = "Gamer");}
+            if (PObj.minimal === max) { console.log(Pname1 = "Minimal user"); }
+            else if (PObj.consumer === max) { console.log(Pname1 = "Consumer"); }
+            else if (PObj.official === max) { console.log(Pname1 = "Official user"); }
+            else if (PObj.student === max) { console.log(Pname1 = "Student"); }
+            else if (PObj.average === max) { console.log(Pname1 = "Average user"); }
+            else if (PObj.camera === max) { console.log(Pname1 = "Camera user"); }
+            else if (PObj.gamer === max) { console.log(Pname1 = "Gamer"); }
 
             // Finding P2
-            if(PObj.minimal === max && !(Pname1 == "Minimal user")){console.log(Pname2 = "Minimal user"); P2percentage = (max / 7) * 100;}
-            else if(PObj.consumer === max && !(Pname1 == "Consumer")){console.log(Pname2 = "Consumer"); P2percentage = (max / 7) * 100;}
-            else if(PObj.official === max && !(Pname1 == "Official user")){console.log(Pname2 = "Official user"); P2percentage = (max / 7) * 100;}
-            else if(PObj.student === max && !(Pname1 == "Student")){console.log(Pname2 = "Student"); P2percentage = (max / 7) * 100;}
-            else if(PObj.average === max && !(Pname1 == "Average user")){console.log(Pname2 = "Average user"); P2percentage = (max / 7) * 100;}
-            else if(PObj.camera === max && !(Pname1 == "Camera user")){console.log(Pname2 = "Camera user"); P2percentage = (max / 7) * 100;}
-            else if(PObj.gamer === max && !(Pname1 == "Gamer")){console.log(Pname2 = "Gamer"); P2percentage = (max / 7) * 100;}
-            else if(PObj.minimal === max-1 && !(Pname1 == "Minimal user")){console.log(Pname2 = "Minimal user"); P2percentage = ((max-1) / 7) * 100;}
-            else if(PObj.consumer === max-1 && !(Pname1 == "Consumer")){console.log(Pname2 = "Consumer"); P2percentage = ((max-1) / 7) * 100;}
-            else if(PObj.official === max-1 && !(Pname1 == "Official user")){console.log(Pname2 = "Official user"); P2percentage = ((max-1) / 7) * 100;}
-            else if(PObj.student === max-1 && !(Pname1 == "Student")){console.log(Pname2 = "Student"); P2percentage = ((max-1) / 7) * 100;}
-            else if(PObj.average === max-1 && !(Pname1 == "Average user")){console.log(Pname2 = "Average user"); P2percentage = ((max-1) / 7) * 100;}
-            else if(PObj.camera === max-1 && !(Pname1 == "Camera user")){console.log(Pname2 = "Camera user"); P2percentage = ((max-1) / 7) * 100;}
-            else if(PObj.gamer === max-1 && !(Pname1 == "Gamer")){console.log(Pname2 = "Gamer"); P2percentage = ((max-1) / 7) * 100;}
+            if (PObj.minimal === max && !(Pname1 == "Minimal user")) { console.log(Pname2 = "Minimal user"); P2percentage = (max / 7) * 100; }
+            else if (PObj.consumer === max && !(Pname1 == "Consumer")) { console.log(Pname2 = "Consumer"); P2percentage = (max / 7) * 100; }
+            else if (PObj.official === max && !(Pname1 == "Official user")) { console.log(Pname2 = "Official user"); P2percentage = (max / 7) * 100; }
+            else if (PObj.student === max && !(Pname1 == "Student")) { console.log(Pname2 = "Student"); P2percentage = (max / 7) * 100; }
+            else if (PObj.average === max && !(Pname1 == "Average user")) { console.log(Pname2 = "Average user"); P2percentage = (max / 7) * 100; }
+            else if (PObj.camera === max && !(Pname1 == "Camera user")) { console.log(Pname2 = "Camera user"); P2percentage = (max / 7) * 100; }
+            else if (PObj.gamer === max && !(Pname1 == "Gamer")) { console.log(Pname2 = "Gamer"); P2percentage = (max / 7) * 100; }
+            else if (PObj.minimal === max - 1 && !(Pname1 == "Minimal user")) { console.log(Pname2 = "Minimal user"); P2percentage = ((max - 1) / 7) * 100; }
+            else if (PObj.consumer === max - 1 && !(Pname1 == "Consumer")) { console.log(Pname2 = "Consumer"); P2percentage = ((max - 1) / 7) * 100; }
+            else if (PObj.official === max - 1 && !(Pname1 == "Official user")) { console.log(Pname2 = "Official user"); P2percentage = ((max - 1) / 7) * 100; }
+            else if (PObj.student === max - 1 && !(Pname1 == "Student")) { console.log(Pname2 = "Student"); P2percentage = ((max - 1) / 7) * 100; }
+            else if (PObj.average === max - 1 && !(Pname1 == "Average user")) { console.log(Pname2 = "Average user"); P2percentage = ((max - 1) / 7) * 100; }
+            else if (PObj.camera === max - 1 && !(Pname1 == "Camera user")) { console.log(Pname2 = "Camera user"); P2percentage = ((max - 1) / 7) * 100; }
+            else if (PObj.gamer === max - 1 && !(Pname1 == "Gamer")) { console.log(Pname2 = "Gamer"); P2percentage = ((max - 1) / 7) * 100; }
 
             // Finding P3
-            if(PObj.minimal === max-1 && !(Pname1 == "Minimal user") && !(Pname2 == "Minimal user")){console.log(Pname3 = "Minimal user"); P3percentage = ((max-1) / 7) * 100;}
-            else if(PObj.consumer === max-1 && !(Pname1 == "Consumer") && !(Pname2 == "Consumer")){console.log(Pname3 = "Consumer"); P3percentage = ((max-1) / 7) * 100;}
-            else if(PObj.official === max-1 && !(Pname1 == "Official user") && !(Pname2 == "Official user")){console.log(Pname3 = "Official user"); P3percentage = ((max-1) / 7) * 100;}
-            else if(PObj.student === max-1 && !(Pname1 == "Student") && !(Pname2 == "Student")){console.log(Pname3 = "Student"); P3percentage = ((max-1) / 7) * 100;}
-            else if(PObj.average === max-1 && !(Pname1 == "Average user") && !(Pname2 == "Average user")){console.log(Pname3 = "Average user"); P3percentage = ((max-1) / 7) * 100;}
-            else if(PObj.camera === max-1 && !(Pname1 == "Camera user") && !(Pname2 == "Camera user")){console.log(Pname3 = "Camera user"); P3percentage = ((max-1) / 7) * 100;}
-            else if(PObj.gamer === max-1 && !(Pname1 == "Gamer") && !(Pname2 == "Gamer")){console.log(Pname3 = "Gamer"); P3percentage = ((max-1) / 7) * 100;}
-            else if(PObj.minimal === max-2 && !(Pname1 == "Minimal user") && !(Pname2 == "Minimal user")){console.log(Pname3 = "Minimal user"); P3percentage = ((max-2) / 7) * 100;}
-            else if(PObj.consumer === max-2 && !(Pname1 == "Consumer") && !(Pname2 == "Consumer")){console.log(Pname3 = "Consumer"); P3percentage = ((max-2) / 7) * 100;}
-            else if(PObj.official === max-2 && !(Pname1 == "Official user") && !(Pname2 == "Official user")){console.log(Pname3 = "Official user"); P3percentage = ((max-2) / 7) * 100;}
-            else if(PObj.student === max-2 && !(Pname1 == "Student") && !(Pname2 == "Student")){console.log(Pname3 = "Student"); P3percentage = ((max-2) / 7) * 100;}
-            else if(PObj.average === max-2 && !(Pname1 == "Average user") && !(Pname2 == "Average user")){console.log(Pname3 = "Average user"); P3percentage = ((max-2) / 7) * 100;}
-            else if(PObj.camera === max-2 && !(Pname1 == "Camera user") && !(Pname2 == "Camera user")){console.log(Pname3 = "Camera user"); P3percentage = ((max-2) / 7) * 100;}
-            else if(PObj.gamer === max-2 && !(Pname1 == "Gamer") && !(Pname2 == "Gamer")){console.log(Pname3 = "Gamer"); P3percentage = ((max-2) / 7) * 100;}
+            if (PObj.minimal === max - 1 && !(Pname1 == "Minimal user") && !(Pname2 == "Minimal user")) { console.log(Pname3 = "Minimal user"); P3percentage = ((max - 1) / 7) * 100; }
+            else if (PObj.consumer === max - 1 && !(Pname1 == "Consumer") && !(Pname2 == "Consumer")) { console.log(Pname3 = "Consumer"); P3percentage = ((max - 1) / 7) * 100; }
+            else if (PObj.official === max - 1 && !(Pname1 == "Official user") && !(Pname2 == "Official user")) { console.log(Pname3 = "Official user"); P3percentage = ((max - 1) / 7) * 100; }
+            else if (PObj.student === max - 1 && !(Pname1 == "Student") && !(Pname2 == "Student")) { console.log(Pname3 = "Student"); P3percentage = ((max - 1) / 7) * 100; }
+            else if (PObj.average === max - 1 && !(Pname1 == "Average user") && !(Pname2 == "Average user")) { console.log(Pname3 = "Average user"); P3percentage = ((max - 1) / 7) * 100; }
+            else if (PObj.camera === max - 1 && !(Pname1 == "Camera user") && !(Pname2 == "Camera user")) { console.log(Pname3 = "Camera user"); P3percentage = ((max - 1) / 7) * 100; }
+            else if (PObj.gamer === max - 1 && !(Pname1 == "Gamer") && !(Pname2 == "Gamer")) { console.log(Pname3 = "Gamer"); P3percentage = ((max - 1) / 7) * 100; }
+            else if (PObj.minimal === max - 2 && !(Pname1 == "Minimal user") && !(Pname2 == "Minimal user")) { console.log(Pname3 = "Minimal user"); P3percentage = ((max - 2) / 7) * 100; }
+            else if (PObj.consumer === max - 2 && !(Pname1 == "Consumer") && !(Pname2 == "Consumer")) { console.log(Pname3 = "Consumer"); P3percentage = ((max - 2) / 7) * 100; }
+            else if (PObj.official === max - 2 && !(Pname1 == "Official user") && !(Pname2 == "Official user")) { console.log(Pname3 = "Official user"); P3percentage = ((max - 2) / 7) * 100; }
+            else if (PObj.student === max - 2 && !(Pname1 == "Student") && !(Pname2 == "Student")) { console.log(Pname3 = "Student"); P3percentage = ((max - 2) / 7) * 100; }
+            else if (PObj.average === max - 2 && !(Pname1 == "Average user") && !(Pname2 == "Average user")) { console.log(Pname3 = "Average user"); P3percentage = ((max - 2) / 7) * 100; }
+            else if (PObj.camera === max - 2 && !(Pname1 == "Camera user") && !(Pname2 == "Camera user")) { console.log(Pname3 = "Camera user"); P3percentage = ((max - 2) / 7) * 100; }
+            else if (PObj.gamer === max - 2 && !(Pname1 == "Gamer") && !(Pname2 == "Gamer")) { console.log(Pname3 = "Gamer"); P3percentage = ((max - 2) / 7) * 100; }
 
             console.log(`${Pname1} : ${P1percentage}`);
             console.log(`${Pname2} : ${P2percentage}`);
             console.log(`${Pname3} : ${P3percentage}`);
-            
+
             // document.getElementById('Pprint').innerHTML = `<br><p class=\"heading\">Personality detected : You seem more like a <span class="logo">${Pname1}</span></p>`
             document.getElementById('Pprint').innerHTML = `<br><p class=\"heading\">Personality detected</p>`
             document.getElementById('showPersonalities').innerHTML = `<br><p class=\"heading\">${Pname1} <br> ${P1percentage.toFixed(2)} %</p>`
-            if(P2percentage){document.getElementById('showPersonalities').innerHTML += `<br><p class=\"heading\">${Pname2} <br> ${P2percentage.toFixed(2)} %</p>`}
-            if(P3percentage){document.getElementById('showPersonalities').innerHTML += `<br><p class=\"heading\">${Pname3} <br> ${P3percentage.toFixed(2)} %</p>`}
+            if (P2percentage) { document.getElementById('showPersonalities').innerHTML += `<br><p class=\"heading\">${Pname2} <br> ${P2percentage.toFixed(2)} %</p>` }
+            if (P3percentage) { document.getElementById('showPersonalities').innerHTML += `<br><p class=\"heading\">${Pname3} <br> ${P3percentage.toFixed(2)} %</p>` }
         }
-        
+
         //This is main js code
         var captureAndSend = () => {
             makePValuesNull();
@@ -382,6 +382,15 @@
     <script src="app.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href="fa/css/all.css" rel="stylesheet">
+
+    <script src="sendmail.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("yucwm7tgHX7RBOuYA");
+        })();
+    </script>
 </head>
 
 <body>
@@ -395,7 +404,7 @@
                 <ul>
                     <li><a href="#landingpage">Home</a></li>
                     <li><a href="#quizpage">Quiz</a></li>
-                    <li><a href="#specspage">Check Phones</a></li>
+                    <li><a href="#feedbackform">Feedback</a></li>
                     <li><a href="#about">About</a></li>
                 </ul>
             </div>
@@ -658,8 +667,18 @@
             </div>
         </div>
 
+        <div id="feedbacksection" class="appFooter">
+            <div id="feedbackform">
+                <h2 style="color: aqua; margin: 20px; transform: scale(1.2);">Feedback Form</h2>
+                <input type="text" placeholder="Enter Your Name" id="name"> <br>
+                <input type="text" placeholder="Enter Your mail" id="email"> <br>
+                <input type="text" placeholder="Enter Feedback ..." id="feedback"> <br>
+                <button onclick="sendFeedback()" class="btn" style="margin: 20px;">Send Feedback</button>
+            </div>
+        </div>
+
         <div id="about" class="appFooter">
-            <h2 style="color: aqua;">&copy;PhoneFits</h2>
+            <h2 style="color: aqua; transform: scale(2);">&copy;2023 PhoneFits</h2>
             <p>Project for Software Engineering made by <br><a href="https://www.linkedin.com/in/geet-salame-57a6a71b6/"
                     target="_blank">111903032 &nbsp; Geet Salame</a> <br> <a href="#">112003028 &nbsp; Subodh
                     Choudhari</a> <br> <a href="#">112003035 &nbsp; Omkar Dhawale</a> </p>
