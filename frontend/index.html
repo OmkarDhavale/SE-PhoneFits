@@ -206,36 +206,36 @@
                 personalityObj.consumer++;
             }
         }
-        var handleQ11 = () => {
-            var personality = document.getElementById('budget').value;
-            if (personality > 9000000) {
-                alert(`Budget Rs.${personality} : Sir aapke liye itna mehenga phone kaha se laau!!`);
-            }
-            else if (personality >= 2000000 && personality < 9000000) {
-                alert(`Budget Rs.${personality} : Paisa chhapne ka dhanda krte ho kya??`);
-            }
-            else if (personality >= 1000000 && personality < 2000000) {
-                alert(`Budget ${personality} : Nice to meet you Ambani chya pora`);
-            }
-            else if (personality >= 200000 && personality < 1000000) {
-                alert(`Budget Rs.${personality} : Aapke pas tel ki khane hai kya??`);
-            }
-            else if (personality >= 100000 && personality < 200000) {
-                alert(`Budget Rs.${personality} : Bohot paisa hai lagta tere paas`);
-            }
-            else if (personality >= 50000 && personality < 100000) {
-                alert(`Budget Rs.${personality} : Hmm Let's look worthy phones for you`);
-            }
-            else if (personality >= 30000 && personality < 50000) {
-                alert(`Budget Rs.${personality} : To start kre?`);
-            }
-            else if (personality >= 10000 && personality < 30000) {
-                alert(`Budget Rs.${personality} : Hmm average people goes with this budget`);
-            }
-            else if (personality < 10000) {
-                alert(`Budget Rs.${personality} : Chlo dekhte hai saste me mast phone aapke liye`);
-            }
-        }
+        // var handleQ11 = () => {
+        //     var personality = document.getElementById('budget').value;
+        //     if (personality > 9000000) {
+        //         alert(`Budget Rs.${personality} : Sir aapke liye itna mehenga phone kaha se laau!!`);
+        //     }
+        //     else if (personality >= 2000000 && personality < 9000000) {
+        //         alert(`Budget Rs.${personality} : Paisa chhapne ka dhanda krte ho kya??`);
+        //     }
+        //     else if (personality >= 1000000 && personality < 2000000) {
+        //         alert(`Budget ${personality} : Nice to meet you Ambani chya pora`);
+        //     }
+        //     else if (personality >= 200000 && personality < 1000000) {
+        //         alert(`Budget Rs.${personality} : Aapke pas tel ki khane hai kya??`);
+        //     }
+        //     else if (personality >= 100000 && personality < 200000) {
+        //         alert(`Budget Rs.${personality} : Bohot paisa hai lagta tere paas`);
+        //     }
+        //     else if (personality >= 50000 && personality < 100000) {
+        //         alert(`Budget Rs.${personality} : Hmm Let's look worthy phones for you`);
+        //     }
+        //     else if (personality >= 30000 && personality < 50000) {
+        //         alert(`Budget Rs.${personality} : To start kre?`);
+        //     }
+        //     else if (personality >= 10000 && personality < 30000) {
+        //         alert(`Budget Rs.${personality} : Hmm average people goes with this budget`);
+        //     }
+        //     else if (personality < 10000) {
+        //         alert(`Budget Rs.${personality} : Chlo dekhte hai saste me mast phone aapke liye`);
+        //     }
+        // }
 
         var calculatePersonality = (PObj) => {
             let Pname1 = "";
@@ -298,8 +298,8 @@
             console.log(`${Pname3} : ${P3percentage}`);
 
             // document.getElementById('Pprint').innerHTML = `<br><p class=\"heading\">Personality detected : You seem more like a <span class="logo">${Pname1}</span></p>`
-            document.getElementById('Pprint').innerHTML = `<br><p class=\"heading\">Personality detected</p>`
-            document.getElementById('showPersonalities').innerHTML = `<br><p class=\"heading\">${Pname1} <br> ${P1percentage.toFixed(2)} %</p>`
+            document.getElementById('Pprint').innerHTML = `<br><p class=\"heading\">Personality detected</p><br>`
+            document.getElementById('showPersonalities').innerHTML = `<p class=\"heading\">${Pname1} <br> ${P1percentage.toFixed(2)} %</p>`
             if (P2percentage) { document.getElementById('showPersonalities').innerHTML += `<br><p class=\"heading\">${Pname2} <br> ${P2percentage.toFixed(2)} %</p>` }
             if (P3percentage) { document.getElementById('showPersonalities').innerHTML += `<br><p class=\"heading\">${Pname3} <br> ${P3percentage.toFixed(2)} %</p>` }
         }
@@ -307,7 +307,7 @@
         //This is main js code
         var captureAndSend = () => {
             makePValuesNull();
-            handleQ11();
+            // handleQ11();
             handleQ1();
             handleQ2();
             handleQ3();
@@ -329,7 +329,7 @@
             // var processor=document.getElementById('processor').value;
             var size = document.getElementById('size').value;
             var rating = document.getElementById('rating').value;
-            var budget = document.getElementById('budget').value;
+            // var budget = document.getElementById('budget').value;
 
             var dict = new Object();
             var dict = {
@@ -340,7 +340,7 @@
                 // processor:processor,
                 "size": size,
                 "rating": rating,
-                "budget": budget,
+                // "budget": budget,
             }
             // alert('Selected'+" "+"Ram:"+ram+" "+"Rom:"+rom+" "+"Camera: "+camera+" "+"Battery: "+battery+" "+"Processor: "+processor+" "+" Size:"+size+" "+"Warranty"+warranty+" "+"Budget:"+budget)
             //this function is accessible from py
@@ -356,7 +356,7 @@
             for (var key in pyToJs) {
                 console.log(key + " -> " + pyToJs[key]['ram']);
                 var displayResult = document.getElementById('displayResult');
-                var html = '<div id="displayMsg"><h1>[Name]</h4><img src="[img]" alt="mobile" class="resultMobileImg"><h2>Price:[budget] RS</h2><h2>RAM:[ram] GB</h2><h2>ROM:[rom] GB</h2><h2>Camera:[camera] MP<h2><h2>Battery:[battery] MAh</h2><h2>Processor:[processor]</h2><h2>Size:[size] inch</h2><button>Buy Now</button></div>';
+                var html = '<div id="displayMsg"><h1>[Name]</h4><img src="[img]" alt="mobile" class="resultMobileImg"></h2><h2>RAM &emsp;&emsp;&ensp;: [ram] GB</h2><h2>ROM &emsp;&emsp;&ensp;: [rom] GB</h2><h2>Camera &emsp;&nbsp;: [camera] MP<h2><h2>Battery &emsp;&ensp;: [battery] MAh</h2><h2>Processor &ensp;: [processor]</h2><h2>Size &emsp;&emsp;&emsp;: [size] inch <h2>Price &emsp;&emsp;&ensp;: [budget] RS</h2><button>Buy Now</button></div>';
                 var newHtml = html.replace('[ram]', pyToJs[key]['ram']);
                 newHtml = newHtml.replace('[rom]', pyToJs[key]['rom']);
                 newHtml = newHtml.replace('[Name]', key);
@@ -537,12 +537,12 @@
                         </select>
                     </div>
                 </div>
-                <div id="que11" class="quecard">
+                <!-- <div id="que11" class="quecard">
                     <div class="que">Q. What is your Budget?</div>
                     <div class="options">
                         <input type="number" id="budget" min="2000" step="500" value="10000">
                     </div>
-                </div>
+                </div> -->
                 <div id="que12" class="quecard">
                     <div class="que">Q. Ratings </div>
                     <div class="options">
@@ -655,15 +655,17 @@
 
             </div>
         </div> -->
-        <div class="classdisplayResult" id="displayResult">
-            <!-- <img src="./images/mobileGif.gif" alt="gif" width="300px" id="mobileGif"> -->
-            <!-- <p class="letscheck">Let's Check which smartphones matches you.</p>
-            <img style="-webkit-box-reflect:below -169px linear-gradient(transparent, transparent, rgba(255, 255, 255, 0.3));"
-                src="./images/girlsearching.webp" alt=""> -->
-            <!-- <button onclick="reloadPage()"><a href="#landingpage" class="btn">ReQuiz</a></button> -->
-            <div>
-                <div id="Pprint"></div>
-                <div id="showPersonalities"></div>
+        <div id="phones">
+            <div class="classdisplayResult" id="displayResult">
+                <!-- <img src="./images/mobileGif.gif" alt="gif" width="300px" id="mobileGif"> -->
+                <!-- <p class="letscheck">Let's Check which smartphones matches you.</p>
+                <img style="-webkit-box-reflect:below -169px linear-gradient(transparent, transparent, rgba(255, 255, 255, 0.3));"
+                    src="./images/girlsearching.webp" alt=""> -->
+                <!-- <button onclick="reloadPage()"><a href="#landingpage" class="btn">ReQuiz</a></button> -->
+                <div>
+                    <div id="Pprint"></div>
+                    <div id="showPersonalities"></div>
+                </div>
             </div>
         </div>
 
@@ -678,7 +680,7 @@
         </div>
 
         <div id="about" class="appFooter">
-            <h2 style="color: aqua; transform: scale(2);">&copy;2023 PhoneFits</h2>
+            <h2 style="color: aqua;">&copy;2023 PhoneFits</h2>
             <p>Project for Software Engineering made by <br><a href="https://www.linkedin.com/in/geet-salame-57a6a71b6/"
                     target="_blank">111903032 &nbsp; Geet Salame</a> <br> <a href="#">112003028 &nbsp; Subodh
                     Choudhari</a> <br> <a href="#">112003035 &nbsp; Omkar Dhawale</a> </p>

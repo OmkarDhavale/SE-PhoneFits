@@ -350,6 +350,20 @@ input {
     background: linear-gradient(to right, #96c93d, #00b09b);
 }
 
+#phones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.resultphones{
+    display: inline;
+    margin: 20px 50px;
+    background: transparent;
+}
+
+
 #displayMsg {
     font-family: cursive;
     text-align: left;
@@ -364,7 +378,13 @@ input {
     box-sizing: border-box;
     padding: 10px;
     box-sizing: border-box;
-    background-color: whitesmoke;
+    background-image: linear-gradient(white, rgb(150, 171, 255));
+}
+
+#displayMsg:hover{
+    transform: scale(1.1);
+    border: 5px outset var(--theme-logo);
+    box-shadow: 0 0 10px var(--theme-logo);
 }
 
 #displayMsg>button {
@@ -459,6 +479,7 @@ input {
     min-width: 50vw;
     max-width: 80vw;
     padding: 5% 20%;
+    margin-top: 50px;
     /* background-color: rgba(0, 0, 0, 0.359); */
     background-color: rgba(0, 255, 255, 0.078);
 }

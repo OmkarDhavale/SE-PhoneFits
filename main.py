@@ -16,7 +16,7 @@ def recieveDataToPython(jsToPy):
     data = {
         "Name": ['User Req name'],
         "Rating": [jsToPy['rating']],
-        "Price Rs": [jsToPy['budget']],
+        # "Price Rs": [jsToPy['budget']],
         "RAM Gb": [jsToPy['ram']],
         "ROM Gb": [jsToPy['rom']],
         "Expandable GB": [' '],
@@ -44,7 +44,7 @@ def recieveDataToPython(jsToPy):
     # 3)Create a column which will contain all these feat
 
     def combineFeatures(row):
-        return str(row['Price Rs'])+" "+str(row['RAM Gb'])+" "+str(row['ROM Gb'])+" "+str(row['Size Inch'])+" "+str(row['R1 Cam MP'])+" "+str(row['Battery Mah'])
+        return str(row['RAM Gb'])+" "+str(row['ROM Gb'])+" "+str(row['Size Inch'])+" "+str(row['R1 Cam MP'])+" "+str(row['Battery Mah'])
     # this will create a seperate colm of combined features
     df["combinedFeatures"] = df.apply(combineFeatures, axis=1)
     # print (df['combinedFeatures'].head())
@@ -61,7 +61,8 @@ def recieveDataToPython(jsToPy):
 
     # 5)Now sort the entries acc to similarity scores
     sortedSimilarPhones = sorted(
-        similarPhones, key=lambda x: x[1], reverse=True)
+        # similarPhones, key=lambda x: x[1], reverse=True)
+        similarPhones, key=lambda x: x[1])
     # print (sortedSimilarPhones)
     # Now print the most similar 5 phones
 
