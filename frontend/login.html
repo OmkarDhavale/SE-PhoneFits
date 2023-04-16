@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhoneFits-Login</title>
     <link rel="icon" type="image/x-icon" href="./images/PhoneFits.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
     <script>
         function navToHomePage() {
             // window.location.href = "index.html";
@@ -17,18 +19,32 @@
 </head>
 
 <body>
-    <div id="loginsection">
-        <input type="email" name="useremail" id="loginuseremail" placeholder="Email">
-        <input type="password" name="userpassword" id="loginuserpassword" placeholder="Password">
-        <input type="submit" value="Log In" id="login" name="loginbtn">
-        <!-- <Button id="login" onclick="navToHomePage()">Login</Button> -->
+    <div id="logo" style="text-align: center;">
+        <h1 class="heading"><span class="logo">Phone<span class="fits">Fits</span></span> &nbsp;<i
+                class="fas fa-mobile"></i></h1>
     </div>
-    <div id="signupsection">
-        <input type="text" name="username" id="signupusername" placeholder="Name">
-        <input type="email" name="useremail" id="signupuseremail" placeholder="Email">
-        <input type="password" name="userpassword" id="signupuserpassword" placeholder="Password">
-        <input type="submit" value="Sign Up" id="signup" name="signupbtn">
-        <!-- <Button id="login" onclick="navToHomePage()">Login</Button> -->
+    <div id="loginhead">
+        <a href="#start">Log In</a>
+        <a href="#end">Sign Up</a>
+    </div>
+    <div id="loginbody" class="float">
+        <div id="start"></div>
+        <div id="loginsection">
+            <input type="email" name="useremail" id="loginuseremail" placeholder="Email">
+            <input type="password" name="userpassword" id="loginuserpassword" placeholder="Password">
+            <input type="submit" value="Log In" id="login" name="loginbtn">
+            <a href="#end">Do not have account? Sign Up</a>
+            <!-- <Button id="login" onclick="navToHomePage()">Login</Button> -->
+        </div>
+        <div id="signupsection">
+            <input type="text" name="username" id="signupusername" placeholder="Name">
+            <input type="email" name="useremail" id="signupuseremail" placeholder="Email">
+            <input type="password" name="userpassword" id="signupuserpassword" placeholder="Password">
+            <input type="submit" value="Sign Up" id="signup" name="signupbtn">
+            <a href="#start">Already have an account? Sign In</a>
+            <!-- <Button id="login" onclick="navToHomePage()">Login</Button> -->
+        </div>
+        <div id="end"></div>
     </div>
     <!-- <a href="index.html">Login</a> -->
 </body>
