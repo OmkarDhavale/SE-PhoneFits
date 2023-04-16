@@ -10,6 +10,10 @@
     <script src="/eel.js"></script>
     <script>
 
+        function navToLoginPage() {
+            // window.location.href = "login.html";
+            window.location.replace("login.html");
+        }
         var personalityObj = new Object();
         var personalityObj = {
             minimal: 0,
@@ -304,12 +308,12 @@
             if (P3percentage) { document.getElementById('showPersonalities').innerHTML += `<br><p class=\"heading\">${Pname3} <br> ${P3percentage.toFixed(2)} %</p>` }
         }
 
-        function buyaction_flipkart(phonename){
+        function buyaction_flipkart(phonename) {
             console.log("Phone to buy is ", phonename);
             url = 'https://www.flipkart.com/search?q=' + phonename;
             window.open(url, '_blank');
         }
-        function buyaction_amazon(phonename){
+        function buyaction_amazon(phonename) {
             console.log("Phone to buy is ", phonename);
             url = 'https://www.amazon.in/s?k=' + phonename;
             window.open(url, '_blank');
@@ -419,6 +423,8 @@
                     <li><a href="#quizpage">Quiz</a></li>
                     <li><a href="#feedbackform">Feedback</a></li>
                     <li><a href="#about">About</a></li>
+                    <!-- <li><a href="login.html">SignIn</a></li> -->
+                    <input type="submit" value="Log Out" id="logout" name="logoutbtn">
                 </ul>
             </div>
         </div>
@@ -701,5 +707,45 @@
     </div>
 
 </body>
+
+<script type="module">
+
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+    import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+    import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyA9J6TKaDPZShYmX6zKJNvdo1ecNevUkZo",
+        authDomain: "phonefits-auth.firebaseapp.com",
+        databaseURL: "https://phonefits-auth-default-rtdb.firebaseio.com",
+        projectId: "phonefits-auth",
+        storageBucket: "phonefits-auth.appspot.com",
+        messagingSenderId: "644034668667",
+        appId: "1:644034668667:web:9d037977c139eb6f9adade"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+    const auth = getAuth();
+
+    logout.addEventListener('click', (e) => {
+        signOut(auth).then(() => {
+            // Sign-out successful.
+            window.location.replace("login.html");
+            alert("Logged Out successfully!");
+        }).catch((error) => {
+            // An error happened.
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            alert("Error : " + errorMessage);
+        });
+    });
+</script>
 
 </html>

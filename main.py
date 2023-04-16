@@ -94,4 +94,4 @@ def recieveDataToPython(jsToPy):
 
 
 eel.init("frontend")
-eel.start('index.html', size=(1920, 1080), port=8090)
+eel.start('login.html', size=(1920, 1080), port=8090)
